@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# Reference : https://github.com/hyperledger/aries-rfcs/tree/master/features/0037-present-proof
+# Reference : https://github.com/markcryptohash/aries-rfcs/tree/master/features/0037-present-proof
 
 @controller
 @present_proof_controller

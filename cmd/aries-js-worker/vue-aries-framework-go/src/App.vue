@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 <template>
   <div id="app">
-    <p style="font-size:50px;font-weight: bold"><img src="https://raw.githubusercontent.com/hyperledger/aries-rfcs/1371a4807ead74c36ea7d5af909064ec491b78c1/collateral/Hyperledger_Aries_Logo_Color.png" height="100px" alt="Hyperledger Aries">Framework Go</p>
+    <p style="font-size:50px;font-weight: bold"><img src="https://raw.githubusercontent.com/markcryptohash/aries-rfcs/1371a4807ead74c36ea7d5af909064ec491b78c1/collateral/Hyperledger_Aries_Logo_Color.png" height="100px" alt="Hyperledger Aries">Framework Go</p>
     <HelloFrameworkGo msg="Welcome to Your Hyperledger Aries Framework Go App!"/>
   </div>
 </template>

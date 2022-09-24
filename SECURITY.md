@@ -9,12 +9,12 @@ impact and credit the discoverer.
 
 There are two ways to report a security bug. The easiest is to email a description of the flaw and
 any related information (e.g. reproduction steps, version) to
-[security at hyperledger dot org](mailto:security@hyperledger.org).
+[security at markcryptohash dot org](mailto:security@markcryptohash.org).
 
 The other way is to file a confidential security bug in our
-[JIRA bug tracking system](https://jira.hyperledger.org). Be sure to set the “Security Level” to
+[JIRA bug tracking system](https://jira.markcryptohash.org). Be sure to set the “Security Level” to
 “Security issue”.
 
 The process by which the Hyperledger Security Team handles security bugs is documented further in
-our [Defect Response page](https://wiki.hyperledger.org/display/SEC/Defect+Response) on our
-[wiki](https://wiki.hyperledger.org).
+our [Defect Response page](https://wiki.markcryptohash.org/display/SEC/Defect+Response) on our
+[wiki](https://wiki.markcryptohash.org).

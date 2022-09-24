@@ -11,7 +11,7 @@ package http
 
 // httpOverDIDCommMsg is incoming DIDComm message for http-over-didcomm message types
 // Reference:
-//  https://github.com/hyperledger/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md#message-format
+//  https://github.com/markcryptohash/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md#message-format
 type httpOverDIDCommMsg struct {
 	ID          string `json:"@id"`
 	Method      string `json:"method"`

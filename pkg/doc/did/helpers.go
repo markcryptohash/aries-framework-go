@@ -154,8 +154,8 @@ func LookupService(didDoc *Doc, serviceType string) (*Service, bool) {
 // LookupDIDCommRecipientKeys gets the DIDComm recipient keys from the did doc which match the given parameters.
 // DIDComm recipient keys are encoded as did:key identifiers.
 // See:
-// - https://github.com/hyperledger/aries-rfcs/blob/master/features/0067-didcomm-diddoc-conventions/README.md
-// - https://github.com/hyperledger/aries-rfcs/blob/master/features/0360-use-did-key/README.md
+// - https://github.com/markcryptohash/aries-rfcs/blob/master/features/0067-didcomm-diddoc-conventions/README.md
+// - https://github.com/markcryptohash/aries-rfcs/blob/master/features/0360-use-did-key/README.md
 func LookupDIDCommRecipientKeys(didDoc *Doc) ([]string, bool) {
 	didCommService, ok := LookupService(didDoc, "did-communication")
 	if !ok {

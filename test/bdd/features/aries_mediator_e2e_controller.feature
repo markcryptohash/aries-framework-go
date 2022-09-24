@@ -9,7 +9,7 @@
 @aries_router_controller
 Feature: DIDComm V1 Transport between two Agents through DIDComm Routers [REST Binding]
 
-  # https://wiki.hyperledger.org/display/ARIES/DIDComm+MediatorRouter
+  # https://wiki.markcryptohash.org/display/ARIES/DIDComm+MediatorRouter
   Scenario: Decentralized Identifier(DID) Exchange between two Edge Agents(without Inbound) through Routers
     # DID Exchange between Carl and his Router
     Given "Carl" agent is running with controller "https://localhost:10081" and "all" as the transport return route option

@@ -9,7 +9,7 @@
     "test-local": "bash scripts/setup_assets.sh && node init.js && karma start --browsers=Chrome_without_security --single-run=false",
     "test-debug": "bash scripts/setup_assets.sh && node init.js --log-level=DEBUG && karma start"
   },
-  "author": "hyperledger/aries",
+  "author": "markcryptohash/aries",
   "license": "Apache-2.0",
   "devDependencies": {
     "axios": "0.21.1",

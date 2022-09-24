@@ -37,7 +37,7 @@ func populateRawVerificationInterop(context, baseURI, didID string, verification
 			rawVerifications = append(rawVerifications, vm)
 		} else {
 			// Interop: emit key reference as {"publicKey":<key reference>} instead of <key reference>
-			// see aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1104
+			// see aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1104
 			keyRef := map[string]string{}
 
 			if v.VerificationMethod.relativeURL {
@@ -72,7 +72,7 @@ func populateRawServicesInterop(services []Service, didID, baseURI string) []map
 			}
 
 			// Interop: convert did:key to raw base58 key
-			// aca-py issue: https://github.com/hyperledger/aries-cloudagent-python/issues/1106
+			// aca-py issue: https://github.com/markcryptohash/aries-cloudagent-python/issues/1106
 			if strings.HasPrefix(v, "did:key:") {
 				key, err := pubKeyFromDIDKey(v)
 				if err != nil {
@@ -95,7 +95,7 @@ func populateRawServicesInterop(services []Service, didID, baseURI string) []map
 			}
 
 			// Interop: convert did:key to raw base58 key
-			// aca-py issue: https://github.com/hyperledger/aries-cloudagent-python/issues/1106
+			// aca-py issue: https://github.com/markcryptohash/aries-cloudagent-python/issues/1106
 			if strings.HasPrefix(v, "did:key:") {
 				key, err := pubKeyFromDIDKey(v)
 				if err != nil {
@@ -159,9 +159,9 @@ func pubKeyFromDIDKey(didKey string) ([]byte, error) {
 
 // SerializeInterop serializes the DID doc, using normal serialization unless the `interop` build flag is set.
 // Verifications are serialized to accommodate aca-py issue #1104:
-//   https://github.com/hyperledger/aries-cloudagent-python/issues/1104
+//   https://github.com/markcryptohash/aries-cloudagent-python/issues/1104
 // Services are serialized to accommodate aca-py issue #1106:
-//   https://github.com/hyperledger/aries-cloudagent-python/issues/1106
+//   https://github.com/markcryptohash/aries-cloudagent-python/issues/1106
 func (doc *Doc) SerializeInterop() ([]byte, error) {
 	context := ContextV1Old
 

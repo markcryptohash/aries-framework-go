@@ -9,7 +9,7 @@
 @legacyconnection_aries_router_controller
 Feature: DIDComm V1 Transport between two Agents through DIDComm Routers [REST Binding]
 
-#   https://wiki.hyperledger.org/display/ARIES/DIDComm+MediatorRouter
+#   https://wiki.markcryptohash.org/display/ARIES/DIDComm+MediatorRouter
   Scenario: Establishing DIDComm V1 using Connection RFC-0160 protocol between two Edge Agents(without Inbound) through Routers
     # Establishing legacy connection between Carl and his Router
     Given "Carl" agent is running with controller "https://localhost:10081" and "all" as the transport return route option

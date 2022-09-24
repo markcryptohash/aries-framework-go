@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# Reference : https://github.com/hyperledger/aries-rfcs/tree/master/features/0036-issue-credential
+# Reference : https://github.com/markcryptohash/aries-rfcs/tree/master/features/0036-issue-credential
 
 @controller
 @issue_credential_controller

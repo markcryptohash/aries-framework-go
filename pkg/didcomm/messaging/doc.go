@@ -13,9 +13,9 @@
 //
 // This package provides message service provider implementation `msghandler` which can be used to maintain list of
 // available message services.
-// (RFC Reference : https://github.com/hyperledger/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md)
+// (RFC Reference : https://github.com/markcryptohash/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md)
 //
 // This package also provides custom message service implementation under `service` package,
 // one which is `service/http` for `http-over-didcomm` service.
-// (RFC Reference : https://github.com/hyperledger/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md)
+// (RFC Reference : https://github.com/markcryptohash/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md)
 package messaging

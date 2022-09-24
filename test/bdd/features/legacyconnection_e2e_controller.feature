@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# Reference : https://github.com/hyperledger/aries-rfcs/tree/main/features/0160-connection-protocol
+# Reference : https://github.com/markcryptohash/aries-rfcs/tree/main/features/0160-connection-protocol
 
 @all
 @controller

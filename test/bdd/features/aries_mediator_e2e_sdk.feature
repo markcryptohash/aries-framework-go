@@ -8,7 +8,7 @@
 @aries_router_sdk
 Feature: DIDComm Transport between two Agents through DIDComm Routers [SDK]
 
-  # https://wiki.hyperledger.org/display/ARIES/DIDComm+MediatorRouter
+  # https://wiki.markcryptohash.org/display/ARIES/DIDComm+MediatorRouter
   Scenario Outline: Decentralized Identifier(DID) Exchange between two Edge Agents(without Inbound) through Routers
     # DID Exchange between Alice and her Router
     Given options "<keyType>" "<keyAgreementType>" "<mediaTypeProfile>"
@@ -145,7 +145,7 @@ Feature: DIDComm Transport between two Agents through DIDComm Routers [SDK]
 #      | "ED25519"  | "X25519ECDHKW"     | "didcomm/aip2;env=rfc587" |
 #      | "ED25519"  | "NISTP384ECDHKW"   | "didcomm/v2"              |
 
-  # https://wiki.hyperledger.org/display/ARIES/DIDComm+MediatorRouter
+  # https://wiki.markcryptohash.org/display/ARIES/DIDComm+MediatorRouter
   Scenario Outline: Decentralized Identifier(DID) Exchange between two Edge Agents(without Inbound) through Routers(HTTP/WS)
     # DID Exchange between Alice and her Router
     Given options "<keyType>" "<keyAgreementType>" "<mediaTypeProfile>"

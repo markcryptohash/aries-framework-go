@@ -26,7 +26,7 @@ const (
 	MediaTypeV2PlaintextPayload = "application/didcomm-plain+json"
 
 	// below are pre-defined profiles supported by the framework as per
-	// https://github.com/hyperledger/aries-rfcs/tree/master/features/0044-didcomm-file-and-mime-types#defined-profiles.
+	// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0044-didcomm-file-and-mime-types#defined-profiles.
 
 	// MediaTypeProfileDIDCommAIP1 is the encryption envelope, signing mechanism, plaintext conventions,
 	// and routing algorithms embodied in Aries AIP 1.0, circa 2020. Defined in RFC 0044.

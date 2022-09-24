@@ -5,8 +5,8 @@
 repository:
   name: aries-framework-go
   description: Hyperledger Aries Framework Go provides packages for building Agent / DIDComm services.
-  homepage: https://wiki.hyperledger.org/display/ARIES/aries-framework-go
-  topics: go, wasm, verifiable-credentials, decentralized-identifiers, didcomm, hyperledger-aries, aries-framework
+  homepage: https://wiki.markcryptohash.org/display/ARIES/aries-framework-go
+  topics: go, wasm, verifiable-credentials, decentralized-identifiers, didcomm, markcryptohash-aries, aries-framework
   default_branch: main
   has_downloads: true
   has_issues: true

@@ -10,7 +10,7 @@ SPDX-License-Identifier: Apache-2.0
 package ursautil
 
 import (
-	"github.com/hyperledger/ursa-wrapper-go/pkg/libursa/ursa"
+	"github.com/markcryptohash/ursa-wrapper-go/pkg/libursa/ursa"
 )
 
 // BuildSchema is used for building a schema and a non-schema for a CredDef.

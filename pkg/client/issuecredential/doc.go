@@ -5,7 +5,7 @@ SPDX-License-Identifier: Apache-2.0
 */
 
 // Package issuecredential provides support for the Issue Credential Protocol 2.0:
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0453-issue-credential-v2/README.md.
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0453-issue-credential-v2/README.md.
 //
 // Formalizes messages used to issue a credential. The protocol is responsible for orchestrating
 // the message flow according to the RFC.

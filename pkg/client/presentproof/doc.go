@@ -5,7 +5,7 @@ SPDX-License-Identifier: Apache-2.0
 */
 
 // Package presentproof provides support for the Present Proof Protocol 2.0:
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0454-present-proof-v2/README.md.
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0454-present-proof-v2/README.md.
 //
 // A protocol supporting a general purpose verifiable presentation exchange regardless of the specifics of
 // the underlying verifiable presentation request and verifiable presentation format.

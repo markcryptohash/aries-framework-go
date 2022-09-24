@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Reference : https://github.com/hyperledger/aries-rfcs/blob/master/features/0434-outofband/README.md
+# Reference : https://github.com/markcryptohash/aries-rfcs/blob/master/features/0434-outofband/README.md
 
 @controller
 @outofband

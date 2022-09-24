@@ -8,7 +8,7 @@
 @messaging_e2e_sdk
 Feature: Messaging between the agents using SDK
 
-  # Reference : https://github.com/hyperledger/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md
+  # Reference : https://github.com/markcryptohash/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md
   Scenario: sending message from one agent to another using message service
     Given "Filip" agent with message registrar is running on "localhost" port "random" with "http" as the transport provider
 
@@ -27,7 +27,7 @@ Feature: Messaging between the agents using SDK
     Then  "Derek" message service receives meeting invite message "Sure, see you there !!" with type "https://didcomm.org/generic/1.0/message" from "Filip"
 
   @basic_message_e2e_sdk
-    # Reference : https://github.com/hyperledger/aries-rfcs/tree/master/features/0095-basic-message
+    # Reference : https://github.com/markcryptohash/aries-rfcs/tree/master/features/0095-basic-message
   Scenario: sending message from one agent to another using message service using "Basic Message Protocol 1.0"
     Given "Filip" agent with message registrar is running on "localhost" port "random" with "http" as the transport provider
 

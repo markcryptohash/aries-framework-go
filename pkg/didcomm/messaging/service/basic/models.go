@@ -13,7 +13,7 @@ import "time"
 
 // Message is message model for basic message protocol
 // Reference:
-//  https://github.com/hyperledger/aries-rfcs/tree/master/features/0095-basic-message#reference
+//  https://github.com/markcryptohash/aries-rfcs/tree/master/features/0095-basic-message#reference
 type Message struct {
 	ID   string `json:"@id"`
 	Type string `json:"@type"`

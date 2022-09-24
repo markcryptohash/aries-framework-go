@@ -5,7 +5,7 @@ SPDX-License-Identifier: Apache-2.0
 */
 
 // Package outofband provides support for the Out-of-Band protocols:
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0434-outofband/README.md.
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0434-outofband/README.md.
 //
 // Create your client:
 //

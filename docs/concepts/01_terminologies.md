@@ -4,7 +4,7 @@
 
 An agent, in the context of self-sovereign identity, acts as a delegate of an individual identity; holds cryptographic keys to prove this responsibility; and interacts with other agents.
 
-_Reference: https://github.com/hyperledger/aries-rfcs/tree/master/concepts/0004-agents_
+_Reference: https://github.com/markcryptohash/aries-rfcs/tree/master/concepts/0004-agents_
 
 ### DID
 
@@ -17,7 +17,7 @@ _Reference: https://www.w3.org/TR/did-core/_
 
 This refers to the general idea about how [agents](#agent) communicate with each other.
 
-_Reference: https://github.com/hyperledger/aries-rfcs/tree/master/concepts/0005-didcomm#motivation_
+_Reference: https://github.com/markcryptohash/aries-rfcs/tree/master/concepts/0005-didcomm#motivation_
 
 ### DID Document
 
@@ -40,13 +40,13 @@ The entity that issues a [credential](#verifiable-credential) to a holder.
 
 This stands for Key Management Service and is responsible for securely storing sensitive agent information such as private keys, secrets and other private data.
 
-_Reference: https://github.com/hyperledger/aries-rfcs/tree/master/concepts/0440-kms-architectures_
+_Reference: https://github.com/markcryptohash/aries-rfcs/tree/master/concepts/0440-kms-architectures_
 
 ### Mediator
 
 A mediator is a participant in agent-to-agent message delivery. It can be seen as a router with mailbox features which cannot read the encrypted contents of the routed messages.
 
-_Reference: https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0046-mediators-and-relays/README.md#summary_
+_Reference: https://github.com/markcryptohash/aries-rfcs/blob/master/concepts/0046-mediators-and-relays/README.md#summary_
 
 ### VDRI
 
@@ -71,4 +71,4 @@ _Reference: https://www.w3.org/TR/vc-data-model/#presentations_
 
 This is the entity who makes a request for a [credential](#verifiable-credential) or proof from a [holder](#holder) and verifies it.
 
-_Reference: https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2#roles_
+_Reference: https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2#roles_
