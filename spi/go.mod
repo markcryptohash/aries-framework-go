@@ -4,4 +4,4 @@
 
 module github.com/markcryptohash/aries-framework-go/spi
 
-go 1.17
+go 1.19
