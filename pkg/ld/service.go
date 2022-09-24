@@ -9,9 +9,9 @@ package ld
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/remote"
-	"github.com/hyperledger/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/remote"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/ld"
 )
 
 // provider contains dependencies for the JSON-LD service.

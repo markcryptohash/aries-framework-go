@@ -10,13 +10,13 @@ package google.crypto.tink;
 
 option java_package = "com.google.crypto.tink.proto";
 option java_multiple_files = true;
-option go_package = "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto";
+option go_package = "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto";
 
 message AesCbcKeyFormat {
   uint32 key_size = 1;
 }
 
-// key_type: type.hyperledger.org/hyperledger.aries.crypto.tink.AesCbcKey
+// key_type: type.markcryptohash.org/markcryptohash.aries.crypto.tink.AesCbcKey
 message AesCbcKey {
   uint32 version = 1;
   bytes key_value = 2;

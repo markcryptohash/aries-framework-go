@@ -14,10 +14,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/config"
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	cmdverifiable "github.com/hyperledger/aries-framework-go/pkg/controller/command/verifiable"
-	opverifiable "github.com/hyperledger/aries-framework-go/pkg/controller/rest/verifiable"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/config"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	cmdverifiable "github.com/markcryptohash/aries-framework-go/pkg/controller/command/verifiable"
+	opverifiable "github.com/markcryptohash/aries-framework-go/pkg/controller/rest/verifiable"
 )
 
 //nolint:lll

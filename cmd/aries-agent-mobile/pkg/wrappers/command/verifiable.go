@@ -9,9 +9,9 @@ package command
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	cmdverifiable "github.com/hyperledger/aries-framework-go/pkg/controller/command/verifiable"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	cmdverifiable "github.com/markcryptohash/aries-framework-go/pkg/controller/command/verifiable"
 )
 
 // Verifiable contains necessary fields for each of its operations.

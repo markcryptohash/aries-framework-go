@@ -11,14 +11,14 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
-	didstore "github.com/hyperledger/aries-framework-go/pkg/store/did"
-	storage "github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
+	didstore "github.com/markcryptohash/aries-framework-go/pkg/store/did"
+	storage "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("aries-framework/command/vdr")

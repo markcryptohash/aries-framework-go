@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // constants for the mediator operations.

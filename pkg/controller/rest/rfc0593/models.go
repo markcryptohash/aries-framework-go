@@ -9,8 +9,8 @@ package rfc0593
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential/rfc0593"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential/rfc0593"
 )
 
 // getCredentialSpecRequest model

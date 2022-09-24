@@ -22,8 +22,8 @@ import (
 	"github.com/btcsuite/btcd/btcec"
 	gojose "github.com/square/go-jose/v3"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
 )
 
 // PublicKeyVerifier makes signature verification using the public key

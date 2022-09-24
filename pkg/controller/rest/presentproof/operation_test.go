@@ -19,14 +19,14 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	didcomm "github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/presentproof"
-	mocks2 "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/controller/command/presentproof"
-	mocknotifier "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstore "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	didcomm "github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/presentproof"
+	mocks2 "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/controller/command/presentproof"
+	mocknotifier "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstore "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
 )
 
 func provider(ctrl *gomock.Controller, lookup *connection.Lookup) *mocks2.MockProvider {

@@ -17,15 +17,15 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/internal/testdata"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/presexch"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
-	mockvdr "github.com/hyperledger/aries-framework-go/pkg/mock/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/key"
+	"github.com/markcryptohash/aries-framework-go/internal/testdata"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/presexch"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
+	mockvdr "github.com/markcryptohash/aries-framework-go/pkg/mock/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/key"
 )
 
 // nolint: lll

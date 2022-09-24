@@ -15,11 +15,11 @@ import (
 	gojose "github.com/square/go-jose/v3"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/signature"
-	kmsapi "github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/signature"
+	kmsapi "github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 func TestPublicKeyVerifier_Verify_EC(t *testing.T) {

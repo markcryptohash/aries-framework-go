@@ -11,9 +11,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/command"
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/config"
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/rest"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/command"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/config"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/rest"
 )
 
 func TestNew(t *testing.T) {

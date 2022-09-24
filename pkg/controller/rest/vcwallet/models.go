@@ -9,9 +9,9 @@ package vcwallet
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/didcommwallet"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/vcwallet"
-	"github.com/hyperledger/aries-framework-go/pkg/wallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/didcommwallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/vcwallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/wallet"
 )
 
 // createProfileRequest is request model for creating a new wallet profile.

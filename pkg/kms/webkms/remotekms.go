@@ -19,9 +19,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	spi "github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	spi "github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 const (

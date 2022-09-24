@@ -16,16 +16,16 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/google/tink/go/keyset"
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
-	"github.com/hyperledger/ursa-wrapper-go/pkg/libursa/ursa"
+	"github.com/markcryptohash/ursa-wrapper-go/pkg/libursa/ursa"
 
-	clsubtle "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/subtle"
-	clpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/cl_go_proto"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ursautil"
+	clsubtle "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/subtle"
+	clpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/cl_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ursautil"
 )
 
 const (
 	clSignerKeyVersion = 0
-	clSignerKeyTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.CLCredDefKey"
+	clSignerKeyTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.CLCredDefKey"
 )
 
 // common errors.

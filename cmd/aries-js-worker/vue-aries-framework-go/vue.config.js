@@ -11,7 +11,7 @@ module.exports = {
     configureWebpack: {
         plugins: [
             new CopyPlugin([{
-                from: "node_modules/@hyperledger/aries-framework-go/dist/**/*",
+                from: "node_modules/@markcryptohash/aries-framework-go/dist/**/*",
                 to: "public/aries-framework-go/",
                 transformPath(targetPath, absolutePath) {
                     return Promise.resolve("public/" + targetPath.substr(targetPath.lastIndexOf("aries-framework-go")));

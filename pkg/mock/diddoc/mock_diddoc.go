@@ -13,10 +13,10 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
 )
 
 // GetMockDIDDoc creates a mock DID Doc for testing.

@@ -17,18 +17,18 @@ import (
 
 	"github.com/btcsuite/btcutil/base58"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/packer"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/packer/authcrypt"
-	legacyAuthCrypt "github.com/hyperledger/aries-framework-go/pkg/didcomm/packer/legacy/authcrypt"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/jwkkid"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/kmsdidkey"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/packer"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/packer/authcrypt"
+	legacyAuthCrypt "github.com/markcryptohash/aries-framework-go/pkg/didcomm/packer/legacy/authcrypt"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/jwkkid"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/kmsdidkey"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 const (

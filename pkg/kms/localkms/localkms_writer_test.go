@@ -15,7 +15,7 @@ import (
 	"github.com/google/tink/go/subtle/random"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 func TestLocalKMSWriter(t *testing.T) {

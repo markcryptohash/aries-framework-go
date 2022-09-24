@@ -9,9 +9,9 @@ package command
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	cmdpresproof "github.com/hyperledger/aries-framework-go/pkg/controller/command/presentproof"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	cmdpresproof "github.com/markcryptohash/aries-framework-go/pkg/controller/command/presentproof"
 )
 
 // PresentProof contains necessary fields for each of its operations.

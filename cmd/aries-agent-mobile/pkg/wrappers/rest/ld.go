@@ -7,8 +7,8 @@
 package rest
 
 import (
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/ld"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/ld"
 )
 
 // LD contains necessary fields to support its operations.

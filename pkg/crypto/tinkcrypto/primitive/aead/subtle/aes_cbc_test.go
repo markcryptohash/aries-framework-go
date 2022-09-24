@@ -17,7 +17,7 @@ import (
 	josecipher "github.com/square/go-jose/v3/cipher"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
 )
 
 func TestNewAESCBC(t *testing.T) {

@@ -12,7 +12,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
 )
 
 func TestSessionManager_CreateSession(t *testing.T) {

@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package presentproof
 
-import "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
+import "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
 
 // ProposePresentationV2 is an optional message sent by the prover to the verifier to initiate a proof presentation
 // process, or in response to a request-presentation message when the prover wants to propose

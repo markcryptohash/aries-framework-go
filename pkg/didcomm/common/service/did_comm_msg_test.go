@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
 )
 
 func TestDIDCommMsgMap_ID(t *testing.T) {

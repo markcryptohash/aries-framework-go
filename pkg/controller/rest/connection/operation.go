@@ -13,14 +13,14 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/connection"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/middleware"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/did"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/middleware"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/did"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // constants for connection management endpoints.

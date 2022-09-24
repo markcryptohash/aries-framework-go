@@ -15,7 +15,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -24,7 +24,7 @@ const (
 	// MyNSPrefix namespace val my.
 	MyNSPrefix = "my"
 	// TheirNSPrefix namespace val their
-	// TODO: https://github.com/hyperledger/aries-framework-go/issues/556 It will not be constant, this namespace
+	// TODO: https://github.com/markcryptohash/aries-framework-go/issues/556 It will not be constant, this namespace
 	//  will need to be figured with verification key
 	TheirNSPrefix    = "their"
 	errMsgInvalidKey = "invalid key"

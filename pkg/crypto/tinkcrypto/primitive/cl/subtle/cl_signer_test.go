@@ -12,10 +12,10 @@ package subtle
 import (
 	"testing"
 
-	"github.com/hyperledger/ursa-wrapper-go/pkg/libursa/ursa"
+	"github.com/markcryptohash/ursa-wrapper-go/pkg/libursa/ursa"
 	"github.com/stretchr/testify/require"
 
-	clapi "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/api"
+	clapi "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/api"
 )
 
 func TestIsCLSigner(t *testing.T) {

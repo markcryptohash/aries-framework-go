@@ -11,10 +11,10 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
 )
 
 type UniversityDegree struct {
@@ -36,7 +36,7 @@ type UniversityDegreeCredential struct {
 }
 
 func (udc *UniversityDegreeCredential) MarshalJSON() ([]byte, error) {
-	// todo too complex! (https://github.com/hyperledger/aries-framework-go/issues/847)
+	// todo too complex! (https://github.com/markcryptohash/aries-framework-go/issues/847)
 	c := udc.Credential
 	cp := *c
 

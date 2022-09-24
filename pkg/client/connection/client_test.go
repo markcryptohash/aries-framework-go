@@ -12,18 +12,18 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/middleware"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	mockcrypto "github.com/hyperledger/aries-framework-go/pkg/mock/crypto"
-	mockdiddoc "github.com/hyperledger/aries-framework-go/pkg/mock/diddoc"
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstore "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	mockvdr "github.com/hyperledger/aries-framework-go/pkg/mock/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	didstore "github.com/hyperledger/aries-framework-go/pkg/store/did"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/middleware"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	mockcrypto "github.com/markcryptohash/aries-framework-go/pkg/mock/crypto"
+	mockdiddoc "github.com/markcryptohash/aries-framework-go/pkg/mock/diddoc"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstore "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	mockvdr "github.com/markcryptohash/aries-framework-go/pkg/mock/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	didstore "github.com/markcryptohash/aries-framework-go/pkg/store/did"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (

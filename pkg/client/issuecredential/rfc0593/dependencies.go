@@ -9,17 +9,17 @@ package rfc0593
 import (
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/signer"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/bbsblssignature2020"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/signer"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/bbsblssignature2020"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // ServiceProvider is used to lookup the issuecredential service.

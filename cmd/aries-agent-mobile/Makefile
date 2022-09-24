@@ -6,7 +6,7 @@
 GO_CMD ?= go
 GOMOBILE_CMD ?= gomobile
 
-PROJECT_ROOT = github.com/hyperledger/aries-framework-go
+PROJECT_ROOT = github.com/markcryptohash/aries-framework-go
 MOBILE_PROJECT_ROOT = $(PROJECT_ROOT)/cmd/aries-agent-mobile
 
 MOBILE_BUILD_PACKAGES := $(MOBILE_PROJECT_ROOT)/...
@@ -20,7 +20,7 @@ ANDROID_OUTPUT_FILE_NAME = aries-agent.aar
 ifeq ($(ANDROID_TARGET),)
 	ANDROID_TARGET = android
 endif
-ANDROID_JAVA_PKG = org.hyperledger.aries
+ANDROID_JAVA_PKG = org.markcryptohash.aries
 
 IOS_BUILD_DIR = $(BUILD_DIR)/ios
 IOS_OUTPUT_FILE_NAME = AriesAgent.framework

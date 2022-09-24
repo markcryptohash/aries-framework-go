@@ -15,15 +15,15 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	diddoc "github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	bddctx "github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/sidetree"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	diddoc "github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	bddctx "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/sidetree"
 )
 
 const (

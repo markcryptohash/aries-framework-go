@@ -15,7 +15,7 @@ import (
 	"github.com/google/tink/go/keyset"
 	"github.com/stretchr/testify/require"
 
-	clsubtle "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/subtle"
+	clsubtle "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/subtle"
 )
 
 func TestCLMasterSecretKeyTemplateSuccess(t *testing.T) {

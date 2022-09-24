@@ -13,13 +13,13 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/localkms"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	"github.com/hyperledger/aries-framework-go/pkg/wallet"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/localkms"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	"github.com/markcryptohash/aries-framework-go/pkg/wallet"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
 )
 
 type credentialsQuery struct {

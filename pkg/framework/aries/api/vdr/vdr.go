@@ -9,7 +9,7 @@ package vdr
 import (
 	"errors"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
 )
 
 // ErrNotFound is returned when a DID resolver does not find the DID.
@@ -36,7 +36,7 @@ type Registry interface {
 }
 
 // VDR verifiable data registry interface.
-// TODO https://github.com/hyperledger/aries-framework-go/issues/2475
+// TODO https://github.com/markcryptohash/aries-framework-go/issues/2475
 type VDR interface {
 	Read(did string, opts ...DIDMethodOption) (*did.DocResolution, error)
 	Create(did *did.Doc, opts ...DIDMethodOption) (*did.DocResolution, error)

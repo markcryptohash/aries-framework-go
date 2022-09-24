@@ -9,10 +9,10 @@ package wallet
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	oobsvc "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofband"
-	oobv2 "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	oobsvc "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofband"
+	oobv2 "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
 )
 
 // rawInvitation can unmarshal either a DIDComm V1 or V2 invitation.

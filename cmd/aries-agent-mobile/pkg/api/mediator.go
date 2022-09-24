@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package api
 
-import "github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+import "github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
 
 // MediatorController defines methods for the Mediator controller.
 type MediatorController interface {

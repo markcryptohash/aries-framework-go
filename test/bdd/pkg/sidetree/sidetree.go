@@ -16,15 +16,15 @@ import (
 	"github.com/trustbloc/sidetree-core-go/pkg/util/pubkey"
 	"github.com/trustbloc/sidetree-core-go/pkg/versions/1_0/client"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	diddoc "github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/jwkkid"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/kmsdidkey"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	diddoc "github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/jwkkid"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/kmsdidkey"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 const docTemplate = `{

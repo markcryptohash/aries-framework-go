@@ -125,7 +125,7 @@ This will generate new Go protobuf files in Bazel's output path, for example on 
     * `aes_cbc_go_proto "github.com/google/tink/go/proto/aes_cbc_go_proto"`
     
     to
-    * `aes_cbc_go_proto "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto"`
+    * `aes_cbc_go_proto "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto"`
 
 You're done!
 

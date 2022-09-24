@@ -14,22 +14,22 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	didstore "github.com/hyperledger/aries-framework-go/pkg/store/did"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	didstore "github.com/markcryptohash/aries-framework-go/pkg/store/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("aries-framework/did-exchange/service")
@@ -56,7 +56,7 @@ const (
 
 const (
 	myNSPrefix = "my"
-	// TODO: https://github.com/hyperledger/aries-framework-go/issues/556 It will not be constant, this namespace
+	// TODO: https://github.com/markcryptohash/aries-framework-go/issues/556 It will not be constant, this namespace
 	//  will need to be figured with verification key
 	theirNSPrefix = "their"
 )
@@ -202,7 +202,7 @@ func (s *Service) Initialize(p interface{}) error { // nolint: funlen
 		mediaTypeProfiles:  mediaTypeProfiles,
 	}
 
-	// TODO channel size - https://github.com/hyperledger/aries-framework-go/issues/246
+	// TODO channel size - https://github.com/markcryptohash/aries-framework-go/issues/246
 	s.callbackChannel = make(chan *message, callbackChannelSize)
 	s.connectionRecorder = connRecorder
 	s.connectionStore = prov.DIDConnectionStore()
@@ -507,7 +507,7 @@ func (s *Service) sendMsgEvents(msg *service.StateMsg) {
 // startInternalListener listens to messages in gochannel for callback messages from clients.
 func (s *Service) startInternalListener() {
 	for msg := range s.callbackChannel {
-		// TODO https://github.com/hyperledger/aries-framework-go/issues/242 - retry logic
+		// TODO https://github.com/markcryptohash/aries-framework-go/issues/242 - retry logic
 		// if no error - do handle
 		if msg.err == nil {
 			msg.err = s.handleWithoutAction(msg)
@@ -886,7 +886,7 @@ func (s *Service) requestMsgRecord(msg service.DIDCommMsg) (*connection.Record, 
 
 	connRecord.TheirDID = request.DID
 
-	// ACA-Py Interop: https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// ACA-Py Interop: https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	if !strings.HasPrefix(connRecord.TheirDID, "did") {
 		connRecord.TheirDID = "did:peer:" + connRecord.TheirDID
 	}

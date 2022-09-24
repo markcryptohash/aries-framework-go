@@ -9,8 +9,8 @@ package presentproof
 import (
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/presentproof"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/presentproof"
 )
 
 // MockPresentProofSvc mock present proof service.

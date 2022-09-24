@@ -13,8 +13,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	opisscred "github.com/hyperledger/aries-framework-go/pkg/controller/rest/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	opisscred "github.com/markcryptohash/aries-framework-go/pkg/controller/rest/issuecredential"
 )
 
 func getIssueCredentialController(t *testing.T) *IssueCredential {

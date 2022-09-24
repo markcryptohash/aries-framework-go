@@ -15,9 +15,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	opintroduce "github.com/hyperledger/aries-framework-go/pkg/controller/rest/introduce"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofband"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	opintroduce "github.com/markcryptohash/aries-framework-go/pkg/controller/rest/introduce"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofband"
 )
 
 var mockPIID = "f749b739-1f3d-4213-9c33-c3878cdb6e24" //nolint:gochecknoglobals

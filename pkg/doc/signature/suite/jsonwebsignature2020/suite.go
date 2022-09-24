@@ -22,8 +22,8 @@ package jsonwebsignature2020
 import (
 	"crypto/sha256"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
 )
 
 // Suite implements jsonWebSignature2020 signature suite.

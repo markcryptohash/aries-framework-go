@@ -22,8 +22,8 @@ import (
 	josecipher "github.com/square/go-jose/v3/cipher"
 	"golang.org/x/crypto/chacha20poly1305"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/cryptoutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/cryptoutil"
 )
 
 type keyWrapper interface {

@@ -57,7 +57,7 @@ Feature: Introduce protocol
     # TODO this test must be reimplemented after outofband was updated.
     #  Reason: attachments in outofband invitations are to be *responded to*, not to be replayed
     #  back to the sender, which is what this test is relying on.
-    #  Issue: https://github.com/hyperledger/aries-framework-go/issues/2735.
+    #  Issue: https://github.com/markcryptohash/aries-framework-go/issues/2735.
 #  @proposal_response_with_embedded_route_request
 #  Scenario: Bob sends a response with approve and an out-of-band invitation with an embedded route-request.
 #    Given   "Alice-Router,Bob" exchange DIDs with "Alice"

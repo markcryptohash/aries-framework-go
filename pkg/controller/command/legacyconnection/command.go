@@ -12,17 +12,17 @@ import (
 	"io"
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/legacyconnection"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/webnotifier"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	protocol "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/legacyconnection"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/legacyconnection"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/webnotifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	protocol "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/legacyconnection"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("aries-framework/controller/legacy-connection")

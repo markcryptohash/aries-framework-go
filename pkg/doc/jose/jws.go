@@ -222,7 +222,7 @@ func ParseJWS(jws string, verifier SignatureVerifier, opts ...JWSParseOpt) (*JSO
 
 	if strings.HasPrefix(jws, "{") {
 		// TODO support JWS JSON serialization format
-		//  https://github.com/hyperledger/aries-framework-go/issues/1331
+		//  https://github.com/markcryptohash/aries-framework-go/issues/1331
 		return nil, errors.New("JWS JSON serialization is not supported")
 	}
 

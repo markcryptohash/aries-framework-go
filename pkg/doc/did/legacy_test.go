@@ -12,7 +12,7 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
 )
 
 func TestToLegacyRawDoc(t *testing.T) {

@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
 )
 
 func TestParseDIDCommMsgMap(t *testing.T) {

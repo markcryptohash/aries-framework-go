@@ -21,19 +21,19 @@ import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 	"github.com/google/tink/go/subtle"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/keyio"
-	bbspb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
-	clpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/cl_go_proto"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/keyio"
+	bbspb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
+	clpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/cl_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 const (
 	ecdsaVerifierTypeURL         = "type.googleapis.com/google.crypto.tink.EcdsaPublicKey"
 	ed25519VerifierTypeURL       = "type.googleapis.com/google.crypto.tink.Ed25519PublicKey"
-	nistPECDHKWPublicKeyTypeURL  = "type.hyperledger.org/hyperledger.aries.crypto.tink.NistPEcdhKwPublicKey"
-	x25519ECDHKWPublicKeyTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPublicKey"
-	bbsVerifierKeyTypeURL        = "type.hyperledger.org/hyperledger.aries.crypto.tink.BBSPublicKey"
-	clCredDefKeyTypeURL          = "type.hyperledger.org/hyperledger.aries.crypto.tink.CLCredDefKey"
+	nistPECDHKWPublicKeyTypeURL  = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.NistPEcdhKwPublicKey"
+	x25519ECDHKWPublicKeyTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPublicKey"
+	bbsVerifierKeyTypeURL        = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.BBSPublicKey"
+	clCredDefKeyTypeURL          = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.CLCredDefKey"
 	derPrefix                    = "der-"
 	p13163Prefix                 = "p1363-"
 )

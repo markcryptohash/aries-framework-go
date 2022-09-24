@@ -18,10 +18,10 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/require"
 
-	client "github.com/hyperledger/aries-framework-go/pkg/client/introduce"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/introduce"
-	mocknotifier "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
+	client "github.com/markcryptohash/aries-framework-go/pkg/client/introduce"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/introduce"
+	mocknotifier "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
 )
 
 func provider(ctrl *gomock.Controller) client.Provider {

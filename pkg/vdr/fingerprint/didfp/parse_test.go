@@ -11,8 +11,8 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint/didfp"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint/didfp"
 )
 
 func TestCreateDIDKey(t *testing.T) {

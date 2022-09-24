@@ -8,7 +8,7 @@ The Aries framework can be configured to use encrypted storage. [EDV](https://id
 The [EDV REST Provider](../component/storage/edv/restprovider.go) can be used to allow an Aries agent to store data in an EDV server of your choosing.
 ```
 // Create an edv.EncryptedFormatter with the necessary key data and crypto data to handle the conversion between unencrypted and encrypted data.
-// See https://github.com/hyperledger/aries-framework-go/blob/main/component/storage/edv/encryptedformatter_test.go#L88 for an example of how you can create the `jweEncrypter`, `jweDecrypter` and `macCrypto` objects.
+// See https://github.com/markcryptohash/aries-framework-go/blob/main/component/storage/edv/encryptedformatter_test.go#L88 for an example of how you can create the `jweEncrypter`, `jweDecrypter` and `macCrypto` objects.
 // Note that the example only creates keys in memory and doesn't store them anywhere persistent.
 // For any real application you will probably want to persist those keys somewhere in order to decrypt documents later after the keys have been wiped from memory.
 encryptedFormatter := edv.NewEncryptedFormatter(jweEncrypter, jweDecrypter, macCrypto)
@@ -25,7 +25,7 @@ framework, err := aries.New(aries.WithStoreProvider(edvRESTProvider))
 It's possible to make use of the EDV encrypted data format without using an EDV server by making use of the [Formatted Storage Provider](../component/storageutil/formattedstore/formattedstore.go) and the [EDV Encrypted Formatter](../component/storage/edv/encryptedformatter.go).
 ```
 // Create an edv.EncryptedFormatter with the necessary key data and crypto data to handle the conversion between unencrypted and encrypted data.
-// See https://github.com/hyperledger/aries-framework-go/blob/main/component/storage/edv/encryptedformatter_test.go#L88 for an example of how you can create the `jweEncrypter`, `jweDecrypter` and `macCrypto` objects.
+// See https://github.com/markcryptohash/aries-framework-go/blob/main/component/storage/edv/encryptedformatter_test.go#L88 for an example of how you can create the `jweEncrypter`, `jweDecrypter` and `macCrypto` objects.
 // Note that the example only creates keys in memory and doesn't store them anywhere persistent.
 // For any real application you will probably want to persist those keys somewhere in order to decrypt documents later after the keys have been wiped from memory.
 encryptedFormatter := edv.NewEncryptedFormatter(jweEncrypter, jweDecrypter, macCrypto)

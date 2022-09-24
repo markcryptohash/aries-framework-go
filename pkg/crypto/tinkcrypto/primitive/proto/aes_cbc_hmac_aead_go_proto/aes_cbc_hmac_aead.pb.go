@@ -9,7 +9,7 @@ package aes_cbc_hmac_aead_go_proto
 import (
 	proto "github.com/golang/protobuf/proto"
 	hmac_go_proto "github.com/google/tink/go/proto/hmac_go_proto"
-	aes_cbc_go_proto "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto"
+	aes_cbc_go_proto "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

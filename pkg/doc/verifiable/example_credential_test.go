@@ -14,19 +14,19 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/bbsblssignature2020"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/jsonwebsignature2020"
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/signature"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	spi "github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/bbsblssignature2020"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/jsonwebsignature2020"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/signature"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	spi "github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 //nolint:gochecknoglobals
@@ -143,7 +143,7 @@ func ExampleCredential_embedding() {
 		panic(fmt.Errorf("failed to marshal VC: %w", err))
 	}
 
-	// todo missing referenceNumber here (https://github.com/hyperledger/aries-framework-go/issues/847)
+	// todo missing referenceNumber here (https://github.com/markcryptohash/aries-framework-go/issues/847)
 	fmt.Println(string(vcBytesFromJWS))
 
 	// To marshal the Credential into JSON-LD form, clear the JWT field.

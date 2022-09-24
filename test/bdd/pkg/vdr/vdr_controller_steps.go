@@ -16,11 +16,11 @@ import (
 	"github.com/cucumber/godog"
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	vdrcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	vdrcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 const (

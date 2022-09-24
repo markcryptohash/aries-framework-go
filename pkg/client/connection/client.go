@@ -11,16 +11,16 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/middleware"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/peerdid"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	didstore "github.com/hyperledger/aries-framework-go/pkg/store/did"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/middleware"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/peerdid"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	didstore "github.com/markcryptohash/aries-framework-go/pkg/store/did"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("aries-framework/pkg/client/connection")

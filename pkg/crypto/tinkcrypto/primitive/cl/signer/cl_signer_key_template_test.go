@@ -13,10 +13,10 @@ import (
 	"testing"
 
 	"github.com/google/tink/go/keyset"
-	"github.com/hyperledger/ursa-wrapper-go/pkg/libursa/ursa"
+	"github.com/markcryptohash/ursa-wrapper-go/pkg/libursa/ursa"
 	"github.com/stretchr/testify/require"
 
-	clsubtle "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/subtle"
+	clsubtle "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/subtle"
 )
 
 func TestCLCredDefKeyTemplateSuccess(t *testing.T) {

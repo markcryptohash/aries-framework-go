@@ -16,16 +16,16 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/didcomm/protocol/middleware/issuecredential"
-	mockvdr "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/framework/aries/api/vdr"
-	mockstore "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/store/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/didcomm/protocol/middleware/issuecredential"
+	mockvdr "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/framework/aries/api/vdr"
+	mockstore "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/store/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
 )
 
 func getCredential() *verifiable.Credential {

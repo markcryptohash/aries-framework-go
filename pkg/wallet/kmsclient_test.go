@@ -15,11 +15,11 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	kmsapi "github.com/hyperledger/aries-framework-go/pkg/kms"
-	mockcrypto "github.com/hyperledger/aries-framework-go/pkg/mock/crypto"
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock/local/masterlock/pbkdf2"
+	kmsapi "github.com/markcryptohash/aries-framework-go/pkg/kms"
+	mockcrypto "github.com/markcryptohash/aries-framework-go/pkg/mock/crypto"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock/local/masterlock/pbkdf2"
 )
 
 const (

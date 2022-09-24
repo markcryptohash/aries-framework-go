@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package edv
 
-import spi "github.com/hyperledger/aries-framework-go/spi/storage"
+import spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 
 // MACDigester represents a type that can compute MACs.
 type MACDigester interface {

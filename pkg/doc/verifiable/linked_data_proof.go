@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/proof"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/signer"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/proof"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/signer"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 const (

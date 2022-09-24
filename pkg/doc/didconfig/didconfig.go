@@ -14,12 +14,12 @@ import (
 
 	jsonld "github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	diddoc "github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/key"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	diddoc "github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/key"
 )
 
 var logger = log.New("aries-framework/doc/verifiable")

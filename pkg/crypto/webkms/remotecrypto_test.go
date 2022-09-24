@@ -33,12 +33,12 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/chacha20poly1305"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/bbs"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/localkms"
-	webkmsimpl "github.com/hyperledger/aries-framework-go/pkg/kms/webkms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/bbs"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/localkms"
+	webkmsimpl "github.com/markcryptohash/aries-framework-go/pkg/kms/webkms"
 )
 
 const (

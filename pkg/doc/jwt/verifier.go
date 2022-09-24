@@ -16,9 +16,9 @@ import (
 	"github.com/square/go-jose/v3/json"
 	"golang.org/x/crypto/ed25519"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	kmsapi "github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	kmsapi "github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 const (
@@ -55,7 +55,7 @@ type BasicVerifier struct {
 // NewVerifier creates a new basic Verifier.
 func NewVerifier(resolver KeyResolver) *BasicVerifier {
 	// TODO Support pluggable JWS verifiers
-	//  (https://github.com/hyperledger/aries-framework-go/issues/1267)
+	//  (https://github.com/markcryptohash/aries-framework-go/issues/1267)
 	verifiers := []verifier.SignatureVerifier{
 		verifier.NewECDSAES256SignatureVerifier(),
 		verifier.NewECDSAES384SignatureVerifier(),
@@ -76,7 +76,7 @@ func NewVerifier(resolver KeyResolver) *BasicVerifier {
 
 	compositeVerifier := jose.NewCompositeAlgSigVerifier(algVerifiers[0], algVerifiers[1:]...)
 	// TODO ECDSA to support NIST P256 curve
-	//  https://github.com/hyperledger/aries-framework-go/issues/1266
+	//  https://github.com/markcryptohash/aries-framework-go/issues/1266
 
 	return &BasicVerifier{resolver: resolver, compositeVerifier: compositeVerifier}
 }
@@ -174,7 +174,7 @@ func (v BasicVerifier) Verify(joseHeaders jose.Headers, payload, signingInput, s
 // VerifyEdDSA verifies EdDSA signature.
 func VerifyEdDSA(pubKey *verifier.PublicKey, message, signature []byte) error {
 	// TODO Use crypto for signing/verification logic
-	//  https://github.com/hyperledger/aries-framework-go/issues/1278
+	//  https://github.com/markcryptohash/aries-framework-go/issues/1278
 	if l := len(pubKey.Value); l != ed25519.PublicKeySize {
 		return errors.New("bad ed25519 public key length")
 	}
@@ -189,7 +189,7 @@ func VerifyEdDSA(pubKey *verifier.PublicKey, message, signature []byte) error {
 // VerifyRS256 verifies RS256 signature.
 func VerifyRS256(pubKey *verifier.PublicKey, message, signature []byte) error {
 	// TODO Use crypto for signing/verification logic
-	//  https://github.com/hyperledger/aries-framework-go/issues/1278
+	//  https://github.com/markcryptohash/aries-framework-go/issues/1278
 	pubKeyRsa, err := x509.ParsePKCS1PublicKey(pubKey.Value)
 	if err != nil {
 		return errors.New("not *rsa.VerificationMethod public key")

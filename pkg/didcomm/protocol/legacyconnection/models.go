@@ -14,14 +14,14 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
 )
 
 // Invitation model
 //
 // Invitation defines Connection protocol invitation message
-// https://github.com/hyperledger/aries-rfcs/tree/main/features/0160-connection-protocol#0-invitation-to-connect
+// https://github.com/markcryptohash/aries-rfcs/tree/main/features/0160-connection-protocol#0-invitation-to-connect
 type Invitation struct {
 	// the Type of the connection invitation
 	Type string `json:"@type,omitempty"`
@@ -46,7 +46,7 @@ type Invitation struct {
 }
 
 // Request defines a2a Connection request
-// https://github.com/hyperledger/aries-rfcs/tree/main/features/0160-connection-protocol#1-connection-request
+// https://github.com/markcryptohash/aries-rfcs/tree/main/features/0160-connection-protocol#1-connection-request
 type Request struct {
 	Type       string            `json:"@type,omitempty"`
 	ID         string            `json:"@id,omitempty"`
@@ -56,7 +56,7 @@ type Request struct {
 }
 
 // Response defines a2a Connection response
-// https://github.com/hyperledger/aries-rfcs/tree/main/features/0160-connection-protocol#2-connection-response
+// https://github.com/markcryptohash/aries-rfcs/tree/main/features/0160-connection-protocol#2-connection-response
 type Response struct {
 	Type                string               `json:"@type,omitempty"`
 	ID                  string               `json:"@id,omitempty"`

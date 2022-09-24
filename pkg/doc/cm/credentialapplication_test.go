@@ -14,10 +14,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cm"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/presexch"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cm"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/presexch"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
 )
 
 const unknownFormatName = "SomeUnknownFormat"

@@ -18,16 +18,16 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/legacyconnection"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	cmdkms "github.com/hyperledger/aries-framework-go/pkg/controller/command/kms"
-	legconncmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/legacyconnection"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/sidetree"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/legacyconnection"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	cmdkms "github.com/markcryptohash/aries-framework-go/pkg/controller/command/kms"
+	legconncmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/legacyconnection"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/sidetree"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 const (

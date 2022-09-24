@@ -9,7 +9,7 @@ package ldcontext
 import (
 	_ "embed" //nolint:gci // required for go:embed
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
 )
 
 // nolint:gochecknoglobals // embedded test contexts

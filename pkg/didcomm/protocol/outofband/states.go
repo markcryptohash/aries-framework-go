@@ -12,9 +12,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
 )
 
 const (
@@ -208,7 +208,7 @@ func (s *statePrepareResponse) Execute(ctx *context, deps *dependencies) (state,
 func (s *statePrepareResponse) connectionReuse(ctx *context, deps *dependencies) (state, finisher, bool, error) {
 	logger.Debugf("reusing connection using context: %+v", ctx)
 
-	// TODO query needs to be improved: https://github.com/hyperledger/aries-framework-go/issues/2732
+	// TODO query needs to be improved: https://github.com/markcryptohash/aries-framework-go/issues/2732
 	records, err := deps.connections.QueryConnectionRecords()
 	if err != nil {
 		return nil, nil, true, fmt.Errorf("connectionReuse: failed to fetch connection records: %w", err)

@@ -10,10 +10,10 @@ var AriesWeb = null;
 var AriesREST = null;
 
 (async function  () {
-    await import('/base/node_modules/@hyperledger/aries-framework-go/dist/web/aries.js')
+    await import('/base/node_modules/@markcryptohash/aries-framework-go/dist/web/aries.js')
     AriesWeb = Aries.Framework
 
-    await import('/base/node_modules/@hyperledger/aries-framework-go/dist/rest/aries.js')
+    await import('/base/node_modules/@markcryptohash/aries-framework-go/dist/rest/aries.js')
     AriesREST = Aries.Framework
 })();
 

@@ -14,20 +14,20 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofband"
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/client/presentproof"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	didexchangeSvc "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/didexchange"
-	issuecredentialsvc "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	outofbandv2svc "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofband"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/presentproof"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	didexchangeSvc "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/didexchange"
+	issuecredentialsvc "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	outofbandv2svc "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // miscellaneous constants.
@@ -190,7 +190,7 @@ func (c *DidComm) Connect(authToken string, invitation *outofband.Invitation, op
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposepresentation
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 //
 // Args:
 // 		- authToken: authorization for performing operation.
@@ -258,7 +258,7 @@ func (c *DidComm) ProposePresentation(authToken string, invitation *GenericInvit
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#presentproof
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 //
 // Args:
 // 		- authToken: authorization for performing operation.
@@ -324,7 +324,7 @@ func (c *DidComm) PresentProof(authToken, thID string, options ...ConcludeIntera
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposecredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 // Args:
 // 		- authToken: authorization for performing operation.
@@ -396,7 +396,7 @@ func (c *DidComm) ProposeCredential(authToken string, invitation *GenericInvitat
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#requestcredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 // Args:
 // 		- authToken: authorization for performing operation.

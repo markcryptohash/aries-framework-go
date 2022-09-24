@@ -16,16 +16,16 @@ import (
 
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/component/storage/edv"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/webkms"
-	"github.com/hyperledger/aries-framework-go/pkg/wallet"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/component/storage/edv"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/webkms"
+	"github.com/markcryptohash/aries-framework-go/pkg/wallet"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("aries-framework/command/vcwallet")

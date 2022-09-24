@@ -10,8 +10,8 @@ import (
 	"crypto/rand"
 	"io"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/packer"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/packer"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // Packer represents an Authcrypt Pack/Unpacker that outputs/reads legacy Aries envelopes.

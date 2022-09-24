@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package introduce
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/client/introduce"
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofband"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/introduce"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofband"
 )
 
 // ActionsResponse model

@@ -15,14 +15,14 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/component/storage/edv"
-	"github.com/hyperledger/aries-framework-go/component/storageutil/formattedstore"
-	"github.com/hyperledger/aries-framework-go/component/storageutil/mem"
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
-	storagetest "github.com/hyperledger/aries-framework-go/test/component/storage"
+	"github.com/markcryptohash/aries-framework-go/component/storage/edv"
+	"github.com/markcryptohash/aries-framework-go/component/storageutil/formattedstore"
+	"github.com/markcryptohash/aries-framework-go/component/storageutil/mem"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
+	storagetest "github.com/markcryptohash/aries-framework-go/test/component/storage"
 )
 
 func TestBatchEncrypter_FormatDeformat(t *testing.T) {

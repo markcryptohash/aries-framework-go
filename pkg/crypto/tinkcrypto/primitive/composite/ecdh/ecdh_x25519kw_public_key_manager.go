@@ -15,14 +15,14 @@ import (
 	"github.com/google/tink/go/keyset"
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh/subtle"
-	ecdhpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh/subtle"
+	ecdhpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
 )
 
 const (
 	x25519ECDHKWPublicKeyVersion = 0
-	x25519ECDHKWPublicKeyTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPublicKey"
+	x25519ECDHKWPublicKeyTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPublicKey"
 )
 
 // common errors.

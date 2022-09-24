@@ -9,9 +9,9 @@ package ld
 import (
 	"github.com/google/uuid"
 
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	"github.com/hyperledger/aries-framework-go/pkg/store/ld"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // MockRemoteProviderStore is a mock remote JSON-LD context provider store.

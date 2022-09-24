@@ -13,8 +13,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	mockpickup "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/protocol/messagepickup"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
+	mockpickup "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/protocol/messagepickup"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
 )
 
 func TestNew(t *testing.T) {

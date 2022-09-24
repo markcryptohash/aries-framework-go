@@ -10,7 +10,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 // levelNames - log level names in string.

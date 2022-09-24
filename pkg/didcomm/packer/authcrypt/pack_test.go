@@ -26,22 +26,22 @@ import (
 	"github.com/square/go-jose/v3"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/keyio"
-	ecdhpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	afgjose "github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/kmsdidkey"
-	mockvdr "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/localkms"
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock/noop"
-	spilog "github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/keyio"
+	ecdhpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	afgjose "github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/kmsdidkey"
+	mockvdr "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/localkms"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock/noop"
+	spilog "github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 func TestAuthcryptPackerSuccess(t *testing.T) {
@@ -634,8 +634,8 @@ func getPrintedX25519PrivKey(t *testing.T, privKeyType ed25519.PrivateKey) strin
 }
 
 func extractPrivKey(kh *keyset.Handle) (interface{}, error) {
-	nistPECDHKWPrivateKeyTypeURL := "type.hyperledger.org/hyperledger.aries.crypto.tink.NistPEcdhKwPrivateKey"
-	x25519ECDHKWPrivateKeyTypeURL := "type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPrivateKey"
+	nistPECDHKWPrivateKeyTypeURL := "type.markcryptohash.org/markcryptohash.aries.crypto.tink.NistPEcdhKwPrivateKey"
+	x25519ECDHKWPrivateKeyTypeURL := "type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPrivateKey"
 	buf := new(bytes.Buffer)
 	w := &privKeyWriter{w: buf}
 	nAEAD := &noopAEAD{}

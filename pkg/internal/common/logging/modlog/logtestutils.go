@@ -15,8 +15,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/internal/common/logging/metadata"
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/common/logging/metadata"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 const (
@@ -30,7 +30,7 @@ const (
 )
 
 //nolint:gochecknoglobals
-// TODO https://github.com/hyperledger/aries-framework-go/issues/751 remove global var buff.
+// TODO https://github.com/markcryptohash/aries-framework-go/issues/751 remove global var buff.
 var buf bytes.Buffer
 
 // VerifyDefaultLogging verifies default logging behaviour.

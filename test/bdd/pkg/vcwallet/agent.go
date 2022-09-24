@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package vcwallet
 
 import (
-	bddagent "github.com/hyperledger/aries-framework-go/test/bdd/agent"
+	bddagent "github.com/markcryptohash/aries-framework-go/test/bdd/agent"
 )
 
 func (s *SDKSteps) createAgent(agent, inboundHost, inboundPort, endpointURL, acceptDidMethod string) error {

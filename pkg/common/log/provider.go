@@ -9,8 +9,8 @@ package log
 import (
 	"sync"
 
-	"github.com/hyperledger/aries-framework-go/pkg/internal/common/logging/modlog"
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/common/logging/modlog"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 // loggerProviderInstance is logger factory singleton - access only via loggerProvider()

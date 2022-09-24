@@ -14,7 +14,7 @@ import (
 	"github.com/google/tink/go/tink"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/mock/secretlock"
+	"github.com/markcryptohash/aries-framework-go/pkg/mock/secretlock"
 )
 
 func TestLocalKMS_New_AEAD(t *testing.T) {

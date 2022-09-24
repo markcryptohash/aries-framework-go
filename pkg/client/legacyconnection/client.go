@@ -14,14 +14,14 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/legacyconnection"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/legacyconnection"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // InvitationMsgType defines the connection invite message type.
@@ -287,7 +287,7 @@ func (c *Client) CreateImplicitInvitationWithDID(inviter, invitee *DIDInfo) (str
 
 // QueryConnections queries connections matching given criteria(parameters).
 func (c *Client) QueryConnections(request *QueryConnectionsParams) ([]*Connection, error) { //nolint: gocyclo
-	// TODO https://github.com/hyperledger/aries-framework-go/issues/655 - query all connections from all criteria and
+	// TODO https://github.com/markcryptohash/aries-framework-go/issues/655 - query all connections from all criteria and
 	//  also results needs to be paged.
 	records, err := c.connectionStore.QueryConnectionRecords()
 	if err != nil {

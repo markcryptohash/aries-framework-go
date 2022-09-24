@@ -13,8 +13,8 @@ import (
 
 	josejwt "github.com/square/go-jose/v3/jwt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jwt"
-	jsonutil "github.com/hyperledger/aries-framework-go/pkg/doc/util/json"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jwt"
+	jsonutil "github.com/markcryptohash/aries-framework-go/pkg/doc/util/json"
 )
 
 const (

@@ -14,14 +14,14 @@ import (
 
 	"github.com/cucumber/godog"
 
-	client "github.com/hyperledger/aries-framework-go/pkg/client/issuecredential"
-	didexcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/didexchange"
-	issuecredentialcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/connection"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	didexsteps "github.com/hyperledger/aries-framework-go/test/bdd/pkg/didexchange"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	client "github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential"
+	didexcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/didexchange"
+	issuecredentialcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/connection"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	didexsteps "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/didexchange"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 const (

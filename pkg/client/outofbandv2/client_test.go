@@ -17,14 +17,14 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	oobv2 "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
-	mockroute "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/protocol/mediator"
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstore "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	oobv2 "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
+	mockroute "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/protocol/mediator"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstore "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
 )
 
 func TestNew(t *testing.T) {

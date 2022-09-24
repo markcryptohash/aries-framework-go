@@ -15,13 +15,13 @@ import (
 	"github.com/google/tink/go/keyset"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-	bld "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/blinder"
-	sgn "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/signer"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cl"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+	bld "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/blinder"
+	sgn "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/signer"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cl"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
 )
 
 func TestCL(t *testing.T) {

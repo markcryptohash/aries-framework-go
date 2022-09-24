@@ -12,7 +12,7 @@ import (
 
 	"github.com/multiformats/go-multibase"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util"
 )
 
 const (

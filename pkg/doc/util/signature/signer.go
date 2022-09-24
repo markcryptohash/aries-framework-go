@@ -12,10 +12,10 @@ import (
 	"crypto/rsa"
 	"errors"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/signature/internal/signer"
-	kmsapi "github.com/hyperledger/aries-framework-go/pkg/kms"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/signature/internal/signer"
+	kmsapi "github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // NewCryptoSigner creates a new signer based on crypto if possible.
@@ -28,7 +28,7 @@ func NewCryptoSigner(crypto cryptoapi.Crypto, kms kmsapi.KeyManager, keyType kms
 		return signer.NewCryptoSigner(crypto, kms, keyType)
 
 	case kmsapi.ECDSASecp256k1TypeIEEEP1363:
-		// TODO use crypto signer when available (https://github.com/hyperledger/aries-framework-go/issues/1285)
+		// TODO use crypto signer when available (https://github.com/markcryptohash/aries-framework-go/issues/1285)
 		return signer.NewECDSASecp256k1Signer()
 
 	case kmsapi.RSARS256Type:

@@ -14,8 +14,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/api"
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/api"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // Provider represents a storage provider wrapper that allows for conversion between the

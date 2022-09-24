@@ -15,13 +15,13 @@ import (
 
 	"github.com/btcsuite/btcutil/base58"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	diddoc "github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	diddoc "github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
 )
 
 // CreateDestination makes a DIDComm Destination object from a DID Doc as per the DIDComm service conventions:
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0067-didcomm-diddoc-conventions/README.md.
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0067-didcomm-diddoc-conventions/README.md.
 func CreateDestination(didDoc *diddoc.Doc) (*Destination, error) {
 	didCommService, ok := diddoc.LookupService(didDoc, didCommServiceType)
 	if !ok {

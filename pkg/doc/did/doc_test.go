@@ -23,14 +23,14 @@ import (
 	gojose "github.com/square/go-jose/v3"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/signer"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ed25519signature2020"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/signer"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ed25519signature2020"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
 )
 
 const pemPK = `-----BEGIN PUBLIC KEY-----

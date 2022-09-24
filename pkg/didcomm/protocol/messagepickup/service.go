@@ -15,13 +15,13 @@ import (
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -492,7 +492,7 @@ func (s *Service) StatusRequest(connectionID string) (*Status, error) {
 	select {
 	case s := <-statusCh:
 		sts = &s
-		// TODO https://github.com/hyperledger/aries-framework-go/issues/1134 configure this timeout at decorator level
+		// TODO https://github.com/markcryptohash/aries-framework-go/issues/1134 configure this timeout at decorator level
 	case <-time.After(updateTimeout):
 		return nil, errors.New("timeout waiting for status request")
 	}
@@ -552,7 +552,7 @@ func (s *Service) BatchPickup(connectionID string, size int) (int, error) {
 			}
 			processed++
 		}
-	// TODO https://github.com/hyperledger/aries-framework-go/issues/1134 configure this timeout at decorator level
+	// TODO https://github.com/markcryptohash/aries-framework-go/issues/1134 configure this timeout at decorator level
 	case <-time.After(updateTimeout):
 		return -1, errors.New("timeout waiting for batch")
 	}

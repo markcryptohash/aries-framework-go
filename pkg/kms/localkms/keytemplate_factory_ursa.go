@@ -12,9 +12,9 @@ package localkms
 import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 
-	clbld "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/blinder"
-	clsgn "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/signer"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	clbld "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/blinder"
+	clsgn "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/signer"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // getKeyTemplate returns tink KeyTemplate associated with the provided keyType.

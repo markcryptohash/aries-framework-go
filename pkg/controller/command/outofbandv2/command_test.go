@@ -16,9 +16,9 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/outofbandv2"
 )
 
 func TestNew(t *testing.T) {

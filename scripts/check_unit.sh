@@ -54,25 +54,25 @@ check_exit_code $DOCKER_RM_EXIT_CODE "docker rm AriesEDVStorageTest"
 }
 
 # Running aries-framework-go unit test
-PKGS=$(go list github.com/hyperledger/aries-framework-go/pkg/... 2> /dev/null | grep -v /mocks | grep -v /aries-js-worker)
+PKGS=$(go list github.com/markcryptohash/aries-framework-go/pkg/... 2> /dev/null | grep -v /mocks | grep -v /aries-js-worker)
 $GO_TEST_CMD $PKGS -count=1 -race -coverprofile=profile.out -covermode=atomic -timeout=10m
 amend_coverage_file
 
 # Running aries-agent-rest unit test
 cd cmd/aries-agent-rest
-PKGS=$(go list github.com/hyperledger/aries-framework-go/cmd/aries-agent-rest/... 2> /dev/null | grep -v /mocks)
+PKGS=$(go list github.com/markcryptohash/aries-framework-go/cmd/aries-agent-rest/... 2> /dev/null | grep -v /mocks)
 $GO_TEST_CMD $PKGS -count=1 -race -coverprofile=profile.out -covermode=atomic -timeout=10m
 amend_coverage_file
 
 # Running storageutil unit tests
 cd ../../component/storageutil
-PKGS=$(go list github.com/hyperledger/aries-framework-go/component/storageutil/... 2> /dev/null)
+PKGS=$(go list github.com/markcryptohash/aries-framework-go/component/storageutil/... 2> /dev/null)
 $GO_TEST_CMD $PKGS -count=1 -race -coverprofile=profile.out -covermode=atomic -timeout=10m
 amend_coverage_file
 
 # Running storage/leveldb unit tests
 cd ../storage/leveldb/
-PKGS=$(go list github.com/hyperledger/aries-framework-go/component/storage/leveldb/... 2> /dev/null)
+PKGS=$(go list github.com/markcryptohash/aries-framework-go/component/storage/leveldb/... 2> /dev/null)
 $GO_TEST_CMD $PKGS -count=1 -race -coverprofile=profile.out -covermode=atomic -timeout=10m
 amend_coverage_file
 
@@ -85,7 +85,7 @@ else
   . "$ROOT"/scripts/start_edv_test_docker_images.sh
 
   cd component/storage/edv
-  PKGS=$(go list github.com/hyperledger/aries-framework-go/component/storage/edv/... 2> /dev/null)
+  PKGS=$(go list github.com/markcryptohash/aries-framework-go/component/storage/edv/... 2> /dev/null)
   GO_TEST_EXIT_CODE=0
   $GO_TEST_CMD $PKGS -count=1 -race -coverprofile=profile.out -covermode=atomic -timeout=10m  || GO_TEST_EXIT_CODE=$?
   if [ $GO_TEST_EXIT_CODE -ne 0 ]; then

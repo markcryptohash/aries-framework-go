@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package dispatcher
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
 )
 
 // ProtocolService is service interface for protocol services available in framework

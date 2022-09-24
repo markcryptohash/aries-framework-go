@@ -17,10 +17,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"nhooyr.io/websocket"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	mockpackager "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/packager"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	mockpackager "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/packager"
 )
 
 func TestClient(t *testing.T) {

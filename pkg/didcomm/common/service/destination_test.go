@@ -19,10 +19,10 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	mockdiddoc "github.com/hyperledger/aries-framework-go/pkg/mock/diddoc"
-	mockvdr "github.com/hyperledger/aries-framework-go/pkg/mock/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	mockdiddoc "github.com/markcryptohash/aries-framework-go/pkg/mock/diddoc"
+	mockvdr "github.com/markcryptohash/aries-framework-go/pkg/mock/vdr"
 )
 
 func TestGetDestinationFromDID(t *testing.T) {

@@ -19,23 +19,23 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	jsonldsig "github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/bbsblssignature2020"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/bbsblssignatureproof2020"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ecdsasecp256k1signature2019"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ed25519signature2020"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/jsonwebsignature2020"
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	jsonutil "github.com/hyperledger/aries-framework-go/pkg/doc/util/json"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/localkms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	jsonldsig "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/bbsblssignature2020"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/bbsblssignatureproof2020"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ecdsasecp256k1signature2019"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ed25519signature2020"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/jsonwebsignature2020"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	jsonutil "github.com/markcryptohash/aries-framework-go/pkg/doc/util/json"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/localkms"
 )
 
 func TestParseCredentialFromLinkedDataProof_Ed25519Signature2018(t *testing.T) {
@@ -717,7 +717,7 @@ func TestParseCredentialFromLinkedDataProof_EcdsaSecp256k1Signature2019(t *testi
 	sigSuite := ecdsasecp256k1signature2019.New(
 		suite.WithSigner(signer),
 		// TODO use suite.NewCryptoVerifier(createLocalCrypto()) verifier as soon as
-		//  tinkcrypto will support secp256k1 (https://github.com/hyperledger/aries-framework-go/issues/1285)
+		//  tinkcrypto will support secp256k1 (https://github.com/markcryptohash/aries-framework-go/issues/1285)
 		suite.WithVerifier(ecdsasecp256k1signature2019.NewPublicKeyVerifier()))
 
 	ldpContext := &LinkedDataProofContext{

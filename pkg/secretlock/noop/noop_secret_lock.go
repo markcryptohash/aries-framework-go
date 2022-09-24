@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 package noop
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock"
 )
 
 // package noop provides a noop secret lock service. This allows for quick testing of key storage using the KMS. Keys

@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
 )
 
 var _ vdr.VDR = (*VDR)(nil) // verify interface compliance

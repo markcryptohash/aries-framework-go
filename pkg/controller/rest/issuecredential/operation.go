@@ -18,12 +18,12 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential/rfc0593"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential/rfc0593"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
 )
 
 var logger = log.New("aries-framework/issuecredential/operation")

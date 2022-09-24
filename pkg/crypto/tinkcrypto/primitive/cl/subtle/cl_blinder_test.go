@@ -14,7 +14,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	clapi "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/api"
+	clapi "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/api"
 )
 
 func TestIsCLBlinder(t *testing.T) {

@@ -19,10 +19,10 @@ import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	mocksecretlock "github.com/hyperledger/aries-framework-go/pkg/mock/secretlock"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock/noop"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	mocksecretlock "github.com/markcryptohash/aries-framework-go/pkg/mock/secretlock"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock/noop"
 )
 
 func TestImportECDSAKeyWithInvalidKey(t *testing.T) {

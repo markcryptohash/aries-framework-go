@@ -16,8 +16,8 @@ import (
 
 	"github.com/btcsuite/btcutil/base58"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	didfingerprint "github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint/didfp"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	didfingerprint "github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint/didfp"
 )
 
 const (

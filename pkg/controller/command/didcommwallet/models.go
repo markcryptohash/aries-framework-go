@@ -10,10 +10,10 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofband"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/vcwallet"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/wallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofband"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/vcwallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/wallet"
 )
 
 // ConnectRequest is request model for wallet DID connect operation.

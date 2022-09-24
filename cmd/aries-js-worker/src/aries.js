@@ -19,7 +19,7 @@ const commandTimeout = 25000
 const __publicPath = _ => {
     if (inNode) {
         // TODO determine module_path at runtime
-        return process.cwd() + "/node_modules/@hyperledger/aries-framework-go/"
+        return process.cwd() + "/node_modules/@markcryptohash/aries-framework-go/"
     } else if (inBrowser) {
         return "/aries-framework-go/"
     } else {

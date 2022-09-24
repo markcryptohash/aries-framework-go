@@ -15,8 +15,8 @@ import (
 
 	"github.com/btcsuite/btcutil/base58"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const edvIDSize = 16

@@ -19,9 +19,9 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/require"
 
-	client "github.com/hyperledger/aries-framework-go/pkg/client/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/outofbandv2"
+	client "github.com/markcryptohash/aries-framework-go/pkg/client/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/outofbandv2"
 )
 
 func provider(ctrl *gomock.Controller) client.Provider {

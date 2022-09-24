@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package transport
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
 )
 
 // OutboundTransport interface definition for transport layer

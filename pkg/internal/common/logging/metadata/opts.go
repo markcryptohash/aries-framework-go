@@ -9,7 +9,7 @@ package metadata
 import (
 	"sync"
 
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 //nolint:gochecknoglobals

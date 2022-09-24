@@ -10,9 +10,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/proof"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/proof"
 )
 
 // SignatureSuite encapsulates signature suite methods required for signature verification.

@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package rest
 
 import (
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	cmdintroduce "github.com/hyperledger/aries-framework-go/pkg/controller/command/introduce"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	cmdintroduce "github.com/markcryptohash/aries-framework-go/pkg/controller/command/introduce"
 )
 
 // Introduce contains necessary fields for each of its operations.

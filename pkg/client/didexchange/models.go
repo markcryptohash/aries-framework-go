@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package didexchange
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
 )
 
 // QueryConnectionsParams model

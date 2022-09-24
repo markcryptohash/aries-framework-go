@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package suite
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 // CryptoSigner defines signer based on crypto.

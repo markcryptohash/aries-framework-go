@@ -13,11 +13,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	ldprocessor "github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	mockldstore "github.com/hyperledger/aries-framework-go/pkg/mock/ld"
-	ldstore "github.com/hyperledger/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	ldprocessor "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	mockldstore "github.com/markcryptohash/aries-framework-go/pkg/mock/ld"
+	ldstore "github.com/markcryptohash/aries-framework-go/pkg/store/ld"
 )
 
 // nolint:gochecknoglobals // required for go:embed

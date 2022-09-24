@@ -12,14 +12,14 @@ import (
 	"github.com/cucumber/godog"
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/connection"
-	"github.com/hyperledger/aries-framework-go/pkg/client/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/context"
-	connection2 "github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	bddctx "github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/didresolver"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/context"
+	connection2 "github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	bddctx "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/didresolver"
 )
 
 // SDKSteps holds connection BDD steps using AFGO's Go SDK.

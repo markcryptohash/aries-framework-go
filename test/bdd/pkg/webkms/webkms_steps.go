@@ -18,10 +18,10 @@ import (
 	"github.com/cucumber/godog"
 	"github.com/teserakt-io/golang-ed25519/extra25519"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/webkms"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/webkms"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
 )
 
 const (

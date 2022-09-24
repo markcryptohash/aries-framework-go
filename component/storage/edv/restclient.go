@@ -15,8 +15,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("EDV-Provider")

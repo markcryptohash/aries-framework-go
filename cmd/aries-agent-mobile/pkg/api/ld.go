@@ -6,7 +6,7 @@
 
 package api
 
-import "github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+import "github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
 
 // LDController defines methods for the JSON-LD controller.
 type LDController interface {

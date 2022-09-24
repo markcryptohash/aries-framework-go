@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 func TestSignatureSuite_Sign(t *testing.T) {

@@ -12,8 +12,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 //nolint:lll

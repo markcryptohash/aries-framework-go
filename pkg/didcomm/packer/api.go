@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0
 package packer
 
 import (
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -19,12 +19,12 @@ const (
 	// https://identity.foundation/didcomm-messaging/spec/#didcomm-encrypted-message
 	// and
 	//nolint:lll
-	// https://github.com/hyperledger/aries-rfcs/blob/master/features/0044-didcomm-file-and-mime-types/README.md#detecting-didcomm-versions
+	// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0044-didcomm-file-and-mime-types/README.md#detecting-didcomm-versions
 	// for DIDComm compliance.
 	EnvelopeEncodingTypeV2 = "application/didcomm-encrypted+json"
 
 	// ContentEncodingTypeV1 is the old `cty` protected header value, added to maintain backward compatibility as per:
-	// https://github.com/hyperledger/aries-rfcs/tree/master/features/0587-encryption-envelope-v2#didcomm-v2-transition.
+	// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0587-encryption-envelope-v2#didcomm-v2-transition.
 	ContentEncodingTypeV1 = "application/json;flavor=didcomm-msg"
 	// ContentEncodingTypeV2 is the default JWE `cty` protected header.
 	ContentEncodingTypeV2 = "application/didcomm-plain+json"

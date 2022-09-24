@@ -9,10 +9,10 @@ package command
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	clientdidexch "github.com/hyperledger/aries-framework-go/pkg/client/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	cmddidexch "github.com/hyperledger/aries-framework-go/pkg/controller/command/didexchange"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	clientdidexch "github.com/markcryptohash/aries-framework-go/pkg/client/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	cmddidexch "github.com/markcryptohash/aries-framework-go/pkg/controller/command/didexchange"
 )
 
 // DIDExchange contains necessary fields to support its operations.

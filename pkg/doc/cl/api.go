@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package cl
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // Issuer contains all high-level methods to process CL Anoncreds on the issuer's side.

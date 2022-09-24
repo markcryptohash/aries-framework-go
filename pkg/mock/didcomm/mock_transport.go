@@ -6,8 +6,8 @@ SPDX-License-Identifier: Apache-2.0
 package didcomm
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
 )
 
 // MockOutboundTransport mock outbound transport structure.

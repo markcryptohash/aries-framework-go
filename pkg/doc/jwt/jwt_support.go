@@ -13,7 +13,7 @@ import (
 	"crypto/rsa"
 	"errors"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
 )
 
 // JoseED25519Signer is a Jose compliant signer.

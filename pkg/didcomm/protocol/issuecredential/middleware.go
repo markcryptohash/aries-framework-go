@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package issuecredential
 
-import "github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
+import "github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
 
 // Handler describes middleware interface.
 type Handler interface {

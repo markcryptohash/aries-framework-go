@@ -15,14 +15,14 @@ import (
 	jsonld "github.com/piprate/json-gold/ld"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/embed"
-	mockldstore "github.com/hyperledger/aries-framework-go/pkg/mock/ld"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	ldstore "github.com/hyperledger/aries-framework-go/pkg/store/ld"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/embed"
+	mockldstore "github.com/markcryptohash/aries-framework-go/pkg/mock/ld"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	ldstore "github.com/markcryptohash/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const sampleJSONLDContext = `

@@ -14,12 +14,12 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential/rfc0593"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential/rfc0593"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
 )
 
 func TestMiddleware(t *testing.T) {

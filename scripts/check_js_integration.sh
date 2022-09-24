@@ -21,7 +21,7 @@ echo "----> setting up aries-js-worker tests"
 echo ""
 cd $ROOT/test/aries-js-worker
 npm install
-npm link @hyperledger/aries-framework-go
+npm link @markcryptohash/aries-framework-go
 echo ""
 echo "----> starting fixtures"
 echo ""

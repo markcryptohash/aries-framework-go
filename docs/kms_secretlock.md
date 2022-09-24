@@ -37,10 +37,10 @@ import (
 	"crypto/rand"
 	"crypto/sha256"
 
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock/local/masterlock/hkdf"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock/local"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock/local/masterlock/hkdf"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock/local"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock"
  
 )
 
@@ -122,10 +122,10 @@ import (
 	"crypto/rand"
 	"crypto/sha256"
 
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock/local/masterlock/hkdf"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock/local"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock/local/masterlock/hkdf"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock/local"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock"
  
 )
 
@@ -201,10 +201,10 @@ The previous way created an Aries framework instance with a default KMS instance
 package mypackage
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/context"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/localkms"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/context"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/localkms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 ...

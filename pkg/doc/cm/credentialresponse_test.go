@@ -14,9 +14,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cm"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cm"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
 )
 
 var (

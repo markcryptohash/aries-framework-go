@@ -13,10 +13,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	ldcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	"github.com/hyperledger/aries-framework-go/pkg/ld"
+	ldcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	"github.com/markcryptohash/aries-framework-go/pkg/ld"
 )
 
 // constants for the JSON-LD operations.

@@ -15,11 +15,11 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofband"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	protocol "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofband"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/outofband"
-	mocknotifier "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofband"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	protocol "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofband"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/outofband"
+	mocknotifier "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
 )
 
 const (

@@ -14,9 +14,9 @@ import (
 
 	"golang.org/x/crypto/nacl/box"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/jwkkid"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/cryptoutil"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/jwkkid"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/cryptoutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // TODO move CryptoBox out of webkms package.

@@ -15,11 +15,11 @@ import (
 	jsonld "github.com/piprate/json-gold/ld"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/embed"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	"github.com/hyperledger/aries-framework-go/pkg/store/ld"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/embed"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (

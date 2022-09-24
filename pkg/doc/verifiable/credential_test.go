@@ -16,13 +16,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/xeipuuv/gojsonschema"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	jsonutil "github.com/hyperledger/aries-framework-go/pkg/doc/util/json"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/ed25519signature2018"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	jsonutil "github.com/markcryptohash/aries-framework-go/pkg/doc/util/json"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 const singleCredentialSubject = `

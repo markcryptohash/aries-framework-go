@@ -13,16 +13,16 @@ import (
 
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofband"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cm"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/wallet"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofband"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cm"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/wallet"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("aries-framework/client/vcwallet")
@@ -385,7 +385,7 @@ func (c *Client) Connect(invitation *outofband.Invitation, options ...wallet.Con
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposepresentation
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 //
 // Args:
 // 		- invitation: out-of-band invitation from relying party.
@@ -408,7 +408,7 @@ func (c *Client) ProposePresentation(invitation *wallet.GenericInvitation, optio
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#presentproof
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 //
 // Args:
 // 		- thID: thread ID (action ID) of request presentation.
@@ -431,7 +431,7 @@ func (c *Client) PresentProof(thID string, presentProofFrom ...wallet.ConcludeIn
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#requestcredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 // Args:
 // 		- invitation: out-of-band invitation from issuer.
@@ -455,7 +455,7 @@ func (c *Client) ProposeCredential(invitation *wallet.GenericInvitation, options
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposecredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 // Args:
 // 		- thID: thread ID (action ID) of offer credential message previously received.

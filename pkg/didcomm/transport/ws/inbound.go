@@ -14,8 +14,8 @@ import (
 
 	"nhooyr.io/websocket"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
 )
 
 var logger = log.New("aries-framework/ws")

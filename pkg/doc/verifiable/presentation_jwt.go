@@ -9,7 +9,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jwt"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jwt"
 )
 
 // JWTPresClaims is JWT Claims extension by Verifiable Presentation (with custom "vp" claim).

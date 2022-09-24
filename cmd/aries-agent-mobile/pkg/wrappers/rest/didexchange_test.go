@@ -13,8 +13,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	opdidexch "github.com/hyperledger/aries-framework-go/pkg/controller/rest/didexchange"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	opdidexch "github.com/markcryptohash/aries-framework-go/pkg/controller/rest/didexchange"
 )
 
 const (

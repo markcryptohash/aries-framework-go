@@ -14,10 +14,10 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/mediator"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/mediator"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 var logger = log.New("aries-framework/tests/messaging")

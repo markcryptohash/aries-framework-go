@@ -13,31 +13,31 @@ import (
 	"github.com/google/uuid"
 	jsonld "github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/middleware"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher/inbound"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher/outbound"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/messenger"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/packager"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/packer"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/remote"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/context"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock"
-	"github.com/hyperledger/aries-framework-go/pkg/store/did"
-	ldstore "github.com/hyperledger/aries-framework-go/pkg/store/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/store/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/key"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/peer"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/middleware"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher/inbound"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher/outbound"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/messenger"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/packager"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/packer"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/remote"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/context"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/did"
+	ldstore "github.com/markcryptohash/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/key"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/peer"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -110,7 +110,7 @@ func New(opts ...Option) (*Aries, error) {
 		return nil, fmt.Errorf("default option initialization failed: %w", err)
 	}
 
-	// TODO: https://github.com/hyperledger/aries-framework-go/issues/212
+	// TODO: https://github.com/markcryptohash/aries-framework-go/issues/212
 	//  Define clear relationship between framework and context.
 	//  Details - The code creates context without protocolServices. The protocolServicesCreators are dependent
 	//  on the context. The inbound transports require ctx.MessageHandler(), which in-turn depends on
@@ -194,7 +194,7 @@ func WithInboundTransport(inboundTransport ...transport.InboundTransport) Option
 }
 
 // WithTransportReturnRoute injects transport return route option to the Aries framework. Acceptable values - "none",
-// "all" or "thread". RFC - https://github.com/hyperledger/aries-rfcs/tree/master/features/0092-transport-return-route.
+// "all" or "thread". RFC - https://github.com/markcryptohash/aries-rfcs/tree/master/features/0092-transport-return-route.
 // Currently, framework supports "all" and "none" option with WebSocket transport ("thread" is not supported).
 func WithTransportReturnRoute(transportReturnRoute string) Option {
 	return func(opts *Aries) error {
@@ -818,7 +818,7 @@ func routingEndpoint(frameworkOpts *Aries) string {
 }
 
 func fetchEndpoint(frameworkOpts *Aries, defaultScheme string) string {
-	// TODO https://github.com/hyperledger/aries-framework-go/issues/1161 Select Service and Router
+	// TODO https://github.com/markcryptohash/aries-framework-go/issues/1161 Select Service and Router
 	//  endpoint from Multiple Inbound Transports
 	for _, inbound := range frameworkOpts.inboundTransports {
 		if strings.HasPrefix(inbound.Endpoint(), defaultScheme) {

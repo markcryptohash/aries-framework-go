@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 import Vue from 'vue'
 import App from './App.vue'
 
-import * as Aries from "@hyperledger/aries-framework-go"
+import * as Aries from "@markcryptohash/aries-framework-go"
 
 async function loadAries() {
     Vue.prototype.$aries = await new Aries.Framework({

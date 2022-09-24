@@ -9,11 +9,11 @@ package issuecredential
 import (
 	"errors"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	issuecredentialmiddleware "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/middleware/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	issuecredentialmiddleware "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/middleware/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
 )
 
 const (
@@ -342,7 +342,7 @@ type redirectOpts struct {
 }
 
 // IssuerDeclineOptions is custom option for sending web redirect options to holder.
-// https://github.com/hyperledger/aries-rfcs/tree/main/concepts/0700-oob-through-redirect
+// https://github.com/markcryptohash/aries-rfcs/tree/main/concepts/0700-oob-through-redirect
 type IssuerDeclineOptions func(opts *redirectOpts)
 
 // RequestRedirect option to provide optional redirect URL requesting holder to redirect.

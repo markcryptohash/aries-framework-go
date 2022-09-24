@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package bbsblssignature2020
 
-import "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+import "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 
 const g2PubKeyType = "Bls12381G2Key2020"
 

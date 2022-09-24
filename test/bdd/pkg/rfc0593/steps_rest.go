@@ -15,14 +15,14 @@ import (
 	"github.com/cucumber/godog"
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential/rfc0593"
-	rfc05932 "github.com/hyperledger/aries-framework-go/pkg/controller/command/rfc0593"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	protocol "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	bddcontext "github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	bddissuecred "github.com/hyperledger/aries-framework-go/test/bdd/pkg/issuecredential"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential/rfc0593"
+	rfc05932 "github.com/markcryptohash/aries-framework-go/pkg/controller/command/rfc0593"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	protocol "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	bddcontext "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	bddissuecred "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 // RestSDKSteps runs BDD test steps for the REST API.

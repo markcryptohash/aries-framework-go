@@ -13,10 +13,10 @@ import (
 
 	jsonld "github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
-	"github.com/hyperledger/aries-framework-go/pkg/store/ld"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // MockContextStore is a mock JSON-LD context store.

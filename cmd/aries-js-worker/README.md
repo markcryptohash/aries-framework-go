@@ -24,7 +24,7 @@ Run `npm install` in this directory. The output bundles will be placed in `dist/
 * `dist/node/aries.js`: for use in node.js
 * `dist/web/aries.js`: for use in the browser
 * `dist/rest/aries.js`: for use in any environment but relying on an external
-  [REST controller API server](https://github.com/hyperledger/aries-framework-go/blob/master/docs/rest/README.md)
+  [REST controller API server](https://github.com/markcryptohash/aries-framework-go/blob/master/docs/rest/README.md)
   instead of the bundled webassembly module.
 
 ### Snippet
@@ -124,21 +124,21 @@ const aries = await new Aries.Framework({
 
 ### Vue.js
 
-See [`vue-framework-go`](https://github.com/hyperledger/aries-framework-go/tree/master/cmd/aries-js-worker/vue-aries-framework-go) for a sample agent built with Vue.js.
+See [`vue-framework-go`](https://github.com/markcryptohash/aries-framework-go/tree/master/cmd/aries-js-worker/vue-aries-framework-go) for a sample agent built with Vue.js.
 
 Note: is the webpack devserver (`npm run serve`) not working for you? Note the points about
 [serving the assets](#important---serving-the-assets) below. See how `vue-aries-framework-go`
-[fixes this](https://github.com/hyperledger/aries-framework-go/blob/master/cmd/aries-js-worker/vue-aries-framework-go/scripts/serve.sh).
+[fixes this](https://github.com/markcryptohash/aries-framework-go/blob/master/cmd/aries-js-worker/vue-aries-framework-go/scripts/serve.sh).
 
 ### Node.js
 
-> **Note:** currently broken, see [#1237](https://github.com/hyperledger/aries-framework-go/issues/1237)
+> **Note:** currently broken, see [#1237](https://github.com/markcryptohash/aries-framework-go/issues/1237)
 
 ```js
-const { Framework } = require('./node_modules/@hyperledger/aries-framework-go/dist/node/aries.js');
+const { Framework } = require('./node_modules/@markcryptohash/aries-framework-go/dist/node/aries.js');
 
 const aries = await new Framework({
-    assetsPath: process.cwd() + "/node_modules/@hyperledger/aries-framework-go/dist/assets",
+    assetsPath: process.cwd() + "/node_modules/@markcryptohash/aries-framework-go/dist/assets",
     "agent-default-label": "dem-js-agent",
     "http-resolver-url": [],
     "auto-accept": true,
@@ -155,7 +155,7 @@ Note: this applies if you are running in the browser.
 
 `aries-js-worker` loads some assets at runtime: the web assembly binary and a couple of JS scripts. These assets are
 located in the `dist/assets` directory (if you `npm install` it, you'll find them in
-`./node_modules/@hyperledger/aries-framework-go/dist/assets`).
+`./node_modules/@markcryptohash/aries-framework-go/dist/assets`).
 
 Things that need to work if you are to use `aries-js-worker` on the client side:
 

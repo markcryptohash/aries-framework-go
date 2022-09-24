@@ -19,17 +19,17 @@ import (
 	"syscall/js"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/messenger"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/introduce"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/presentproof"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/localkms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	"github.com/hyperledger/aries-framework-go/pkg/store/did"
-	"github.com/hyperledger/aries-framework-go/pkg/store/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/peer"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/messenger"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/introduce"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/presentproof"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/localkms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/peer"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // TODO (#2528): Proper implementation of all methods.

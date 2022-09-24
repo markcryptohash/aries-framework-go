@@ -9,14 +9,14 @@ package legacyconnection
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/legacyconnection"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	mockprotocol "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/protocol"
-	mockroute "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/protocol/mediator"
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstore "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/legacyconnection"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	mockprotocol "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/protocol"
+	mockroute "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/protocol/mediator"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstore "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
 )
 
 func Example() {

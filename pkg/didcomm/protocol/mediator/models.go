@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0
 package mediator
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
 )
 
 // Request route request message.
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0211-route-coordination#route-request
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0211-route-coordination#route-request
 type Request struct {
 	Type             string `json:"@type,omitempty"`
 	ID               string `json:"@id,omitempty"`
@@ -20,7 +20,7 @@ type Request struct {
 }
 
 // Grant route grant message.
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0211-route-coordination#route-grant
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0211-route-coordination#route-grant
 type Grant struct {
 	Type        string   `json:"@type,omitempty"`
 	ID          string   `json:"@id,omitempty"`
@@ -29,7 +29,7 @@ type Grant struct {
 }
 
 // KeylistUpdate route keylist update message.
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0211-route-coordination#keylist-update
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0211-route-coordination#keylist-update
 type KeylistUpdate struct {
 	Type    string   `json:"@type,omitempty"`
 	ID      string   `json:"@id,omitempty"`
@@ -43,7 +43,7 @@ type Update struct {
 }
 
 // KeylistUpdateResponse route keylist update response message.
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0211-route-coordination#keylist-update-response
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0211-route-coordination#keylist-update-response
 type KeylistUpdateResponse struct {
 	Type    string           `json:"@type,omitempty"`
 	ID      string           `json:"@id,omitempty"`

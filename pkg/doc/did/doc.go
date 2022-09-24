@@ -21,12 +21,12 @@ import (
 	"github.com/multiformats/go-multibase"
 	"github.com/xeipuuv/gojsonschema"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	sigproof "github.com/hyperledger/aries-framework-go/pkg/doc/signature/proof"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	sigproof "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/proof"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 const (
@@ -486,7 +486,7 @@ func ParseDocument(data []byte) (*Doc, error) { // nolint:funlen,gocyclo
 	}
 
 	// Interop: handle legacy did docs that incorrectly indicate they use the new format
-	// aca-py and vcx issue: https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// aca-py and vcx issue: https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	var serviceType string
 	if len(raw.Service) > 0 {
 		serviceType, _ = raw.Service[0]["type"].(string) //nolint: errcheck
@@ -544,7 +544,7 @@ func ParseDocument(data []byte) (*Doc, error) { // nolint:funlen,gocyclo
 }
 
 func requiresLegacyHandling(raw *rawDoc) bool {
-	// aca-py issue: https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// aca-py issue: https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	//  old v1 context is (currently) only used by projects like aca-py that
 	//  have not fully updated to latest did spec for aip2.0
 	return ContextContainsString(raw.Context, ContextV1Old)

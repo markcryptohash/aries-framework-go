@@ -22,10 +22,10 @@ import (
 	"github.com/piprate/json-gold/ld"
 	"github.com/xeipuuv/gojsonschema"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	jsonutil "github.com/hyperledger/aries-framework-go/pkg/doc/util/json"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	kmsapi "github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	jsonutil "github.com/markcryptohash/aries-framework-go/pkg/doc/util/json"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	kmsapi "github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // TODO https://github.com/square/go-jose/issues/263 support ES256K

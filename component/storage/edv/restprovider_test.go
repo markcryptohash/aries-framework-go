@@ -22,12 +22,12 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/component/storage/edv"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
-	storagetest "github.com/hyperledger/aries-framework-go/test/component/storage"
+	"github.com/markcryptohash/aries-framework-go/component/storage/edv"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
+	storagetest "github.com/markcryptohash/aries-framework-go/test/component/storage"
 )
 
 const testServerURL = "http://localhost:8071/encrypted-data-vaults"

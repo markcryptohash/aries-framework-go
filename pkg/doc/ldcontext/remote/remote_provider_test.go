@@ -16,8 +16,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/remote"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/remote"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
 )
 
 func TestProvider_Contexts(t *testing.T) {

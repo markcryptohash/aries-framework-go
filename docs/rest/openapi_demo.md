@@ -166,7 +166,7 @@ For example, to create a "peer" DID in alice agent, go to `HTTP POST /vdr/did/cr
 
 NOTE: Before using Present Proof protocol you need to establish did-connection.
 If you already have established a did-connection you can use it, if not then  see the instruction
-of [how to establish a did-connection](https://github.com/hyperledger/aries-framework-go/blob/master/docs/rest/openapi_demo.md#how-to-create-a-did-connection-through-the-out-of-band-protocol).
+of [how to establish a did-connection](https://github.com/markcryptohash/aries-framework-go/blob/master/docs/rest/openapi_demo.md#how-to-create-a-did-connection-through-the-out-of-band-protocol).
 
 1. Send a request presentation (Alice).
 
@@ -339,7 +339,7 @@ of [how to establish a did-connection](https://github.com/hyperledger/aries-fram
 
 NOTE: Before using Issue Credential protocol you need to establish did-connection.
 If you already have established a did-connection you can use it, if not then see the instruction
-of [how to establish a did-connection](https://github.com/hyperledger/aries-framework-go/blob/master/docs/rest/openapi_demo.md#how-to-create-a-did-connection-through-the-out-of-band-protocol).
+of [how to establish a did-connection](https://github.com/markcryptohash/aries-framework-go/blob/master/docs/rest/openapi_demo.md#how-to-create-a-did-connection-through-the-out-of-band-protocol).
 
 1. Send an offer (Alice).
 

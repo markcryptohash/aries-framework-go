@@ -12,7 +12,7 @@ package localkms
 import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // getKeyTemplate returns tink KeyTemplate associated with the provided keyType.

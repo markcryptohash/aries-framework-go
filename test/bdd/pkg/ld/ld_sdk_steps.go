@@ -13,10 +13,10 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/remote"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/remote"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
 )
 
 // SDKSteps is steps for JSON-LD operations using client SDK.

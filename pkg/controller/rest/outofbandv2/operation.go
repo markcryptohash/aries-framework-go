@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"net/http"
 
-	client "github.com/hyperledger/aries-framework-go/pkg/client/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
+	client "github.com/markcryptohash/aries-framework-go/pkg/client/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
 )
 
 // constants for the OutOfBandv2 protocol operations.

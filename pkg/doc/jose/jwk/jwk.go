@@ -22,9 +22,9 @@ import (
 	"github.com/square/go-jose/v3"
 	"golang.org/x/crypto/ed25519"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/cryptoutil"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/cryptoutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 const (

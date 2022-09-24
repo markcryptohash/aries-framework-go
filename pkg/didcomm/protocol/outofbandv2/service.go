@@ -15,23 +15,23 @@ import (
 	"github.com/google/uuid"
 	gojose "github.com/square/go-jose/v3"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/peer"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/peer"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -44,7 +44,7 @@ const (
 	// InvitationMsgType is the '@type' for the invitation message.
 	InvitationMsgType = PIURI + "/invitation"
 
-	// TODO channel size - https://github.com/hyperledger/aries-framework-go/issues/246
+	// TODO channel size - https://github.com/markcryptohash/aries-framework-go/issues/246
 	callbackChannelSize = 10
 
 	contextKey = "context_%s"
@@ -369,7 +369,7 @@ func (s *Service) addRouterKeys(doc *did.Doc, routerConnections []string) error 
 		}
 
 		for _, connID := range routerConnections {
-			// TODO https://github.com/hyperledger/aries-framework-go/issues/1105 add multiple keys at once.
+			// TODO https://github.com/markcryptohash/aries-framework-go/issues/1105 add multiple keys at once.
 			if err := mediator.AddKeyToRouter(s.routeSvc, connID, kaID); err != nil {
 				return fmt.Errorf("did doc - add key to the router: %w", err)
 			}

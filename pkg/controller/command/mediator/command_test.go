@@ -15,14 +15,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	messagepickupSvc "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/messagepickup"
-	oobsvc "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofband"
-	mockroute "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/protocol/messagepickup"
-	mockoob "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/protocol/outofband"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	messagepickupSvc "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/messagepickup"
+	oobsvc "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofband"
+	mockroute "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/protocol/messagepickup"
+	mockoob "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/protocol/outofband"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
 )
 
 const (

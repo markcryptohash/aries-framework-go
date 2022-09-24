@@ -22,9 +22,9 @@ import (
 	"github.com/google/tink/go/signature"
 	"golang.org/x/crypto/chacha20poly1305"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/bbs"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/bbs"
 )
 
 const (
@@ -41,8 +41,8 @@ const (
 	// ECDH1PUXC20PKWAlg is the ECDH-1PU with XChacha20Poly1305 key wrapping algorithm.
 	ECDH1PUXC20PKWAlg = "ECDH-1PU+XC20PKW"
 
-	nistPECDHKWPrivateKeyTypeURL  = "type.hyperledger.org/hyperledger.aries.crypto.tink.NistPEcdhKwPrivateKey"
-	x25519ECDHKWPrivateKeyTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPrivateKey"
+	nistPECDHKWPrivateKeyTypeURL  = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.NistPEcdhKwPrivateKey"
+	x25519ECDHKWPrivateKeyTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPrivateKey"
 )
 
 var errBadKeyHandleFormat = errors.New("bad key handle format")

@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/proof"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/proof"
 )
 
 const defaultProofPurpose = "assertionMethod"
@@ -117,7 +117,7 @@ func (signer *DocumentSigner) signObject(context *Context, jsonLdObject map[stri
 	}
 
 	// TODO support custom proof purpose
-	//  (https://github.com/hyperledger/aries-framework-go/issues/1586)
+	//  (https://github.com/markcryptohash/aries-framework-go/issues/1586)
 	if p.ProofPurpose == "" {
 		p.ProofPurpose = defaultProofPurpose
 	}

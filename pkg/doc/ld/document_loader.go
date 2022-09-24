@@ -12,10 +12,10 @@ import (
 
 	jsonld "github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/embed"
-	"github.com/hyperledger/aries-framework-go/pkg/store/ld"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/embed"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // ErrContextNotFound is returned when JSON-LD context document is not found in the underlying storage.

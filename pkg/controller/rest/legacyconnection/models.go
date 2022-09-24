@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package legacyconnection
 
 import (
-	legacyConnSvc "github.com/hyperledger/aries-framework-go/pkg/client/legacyconnection"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/legacyconnection"
+	legacyConnSvc "github.com/markcryptohash/aries-framework-go/pkg/client/legacyconnection"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/legacyconnection"
 )
 
 // legacyCreateInvitationRequest model

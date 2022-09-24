@@ -15,8 +15,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/pkg/internal/common/logging/metadata"
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/common/logging/metadata"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 const (

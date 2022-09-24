@@ -17,7 +17,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
 )
 
 const (
@@ -107,7 +107,7 @@ func IsDIDCommV2(msg *DIDCommMsgMap) (bool, error) {
 	_, hasIDV2 := (*msg)["id"]
 	_, hasTypeV2 := (*msg)["type"]
 	// TODO: some present-proof v3 messages forget to include the body, enable the hasBodyV2 check when that is fixed.
-	// TODO: see issue: https://github.com/hyperledger/aries-framework-go/issues/3039
+	// TODO: see issue: https://github.com/markcryptohash/aries-framework-go/issues/3039
 	// _, hasBodyV2 := (*msg)["body"]
 
 	if hasIDV2 || hasTypeV2 /* && hasBodyV2 */ {

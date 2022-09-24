@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package exampleformatters
 
 import (
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // NoOpFormatter is a simple "formatter" intended for testing purposes that just passes whatever is passed

@@ -17,8 +17,8 @@ package bbsblssignatureproof2020
 import (
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
 )
 
 // Suite implements BbsBlsSignatureProof2020 signature suite.

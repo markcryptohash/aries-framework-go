@@ -8,8 +8,8 @@ SPDX-License-Identifier: Apache-2.0
 package didexchange
 
 import (
-	didexchangeSvc "github.com/hyperledger/aries-framework-go/pkg/client/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/didexchange"
+	didexchangeSvc "github.com/markcryptohash/aries-framework-go/pkg/client/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/didexchange"
 )
 
 // createInvitationRequest model

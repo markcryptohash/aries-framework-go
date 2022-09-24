@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package ecdsasecp256k1signature2019
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 // NewPublicKeyVerifier creates a signature verifier that verifies a ECDSA secp256k1 signature

@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package jsonwebsignature2020
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 // NewPublicKeyVerifier creates a signature verifier that verifies a Ed25519 / EC (P-256, P-384, P-521, secp256k1) / RSA

@@ -9,7 +9,7 @@ package mediator
 import (
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
 )
 
 const (

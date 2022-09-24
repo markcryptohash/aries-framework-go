@@ -6,10 +6,10 @@ SPDX-License-Identifier: Apache-2.0
 
 package model
 
-import "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
+import "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
 
 // acknowledgement status constants.
-// Refer https://github.com/hyperledger/aries-rfcs/blob/main/features/0015-acks/README.md#ack-status.
+// Refer https://github.com/markcryptohash/aries-rfcs/blob/main/features/0015-acks/README.md#ack-status.
 const (
 	AckStatusOK      = "OK"
 	AckStatusFAIL    = "FAIL"

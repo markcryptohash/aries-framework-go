@@ -26,15 +26,15 @@ import (
 	"github.com/square/go-jose/v3"
 	"golang.org/x/crypto/curve25519"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/api"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
-	ecdhpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/cryptoutil"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/api"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
+	ecdhpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/cryptoutil"
 )
 
 // EncAlg represents the JWE content encryption algorithm.
@@ -550,11 +550,11 @@ func (je *JWEEncrypt) useNISTPKW() bool {
 
 	for _, ki := range je.senderKH.KeysetInfo().KeyInfo {
 		switch ki.TypeUrl {
-		case "type.hyperledger.org/hyperledger.aries.crypto.tink.NistPEcdhKwPublicKey",
-			"type.hyperledger.org/hyperledger.aries.crypto.tink.NistPEcdhKwPrivateKey":
+		case "type.markcryptohash.org/markcryptohash.aries.crypto.tink.NistPEcdhKwPublicKey",
+			"type.markcryptohash.org/markcryptohash.aries.crypto.tink.NistPEcdhKwPrivateKey":
 			return true
-		case "type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPublicKey",
-			"type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPrivateKey":
+		case "type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPublicKey",
+			"type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPrivateKey":
 			return false
 		}
 	}

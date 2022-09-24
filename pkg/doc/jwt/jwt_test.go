@@ -20,7 +20,7 @@ import (
 	"github.com/square/go-jose/v3/jwt"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
 )
 
 type CustomClaim struct {

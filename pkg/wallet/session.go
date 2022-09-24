@@ -16,7 +16,7 @@ import (
 	"github.com/bluele/gcache"
 	"github.com/pkg/errors"
 
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // ErrInvalidAuthToken when auth token provided to wallet is unable to unlock key manager.

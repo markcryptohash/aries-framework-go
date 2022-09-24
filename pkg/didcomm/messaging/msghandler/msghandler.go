@@ -13,7 +13,7 @@
 // this message handler also provides register/unregister functionality which can be used to add/remove
 // message services from already running agent.
 //
-// (RFC Reference : https://github.com/hyperledger/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md)
+// (RFC Reference : https://github.com/markcryptohash/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md)
 //
 package msghandler
 
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher"
 )
 
 const (

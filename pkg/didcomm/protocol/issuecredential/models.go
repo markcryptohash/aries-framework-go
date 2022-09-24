@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package issuecredential
 
-import "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
+import "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
 
 // ProposeCredentialV2 is an optional message sent by the potential Holder to the Issuer
 // to initiate the protocol or in response to a offer-credential message when the Holder

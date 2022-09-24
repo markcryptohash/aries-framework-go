@@ -9,7 +9,7 @@ package messaging
 import (
 	"encoding/json"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/messaging"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/messaging"
 )
 
 // registerMessageServiceRequest model

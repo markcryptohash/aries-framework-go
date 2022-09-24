@@ -19,11 +19,11 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/require"
 
-	ldcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	ldrest "github.com/hyperledger/aries-framework-go/pkg/controller/rest/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
-	mockld "github.com/hyperledger/aries-framework-go/pkg/mock/ld"
+	ldcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	ldrest "github.com/markcryptohash/aries-framework-go/pkg/controller/rest/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
+	mockld "github.com/markcryptohash/aries-framework-go/pkg/mock/ld"
 )
 
 func TestNew(t *testing.T) {

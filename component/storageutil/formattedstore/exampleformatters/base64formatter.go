@@ -11,7 +11,7 @@ import (
 
 	"github.com/google/uuid"
 
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // Base64Formatter is a simple formatter that formats and deformats data between a plaintext format and base64 format.

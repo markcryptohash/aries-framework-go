@@ -22,21 +22,21 @@ import (
 	commonpb "github.com/google/tink/go/proto/common_go_proto"
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
-	ecdhpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
+	ecdhpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // Package keyio supports exporting of Composite keys (aka Write) and converting the public key part of the a composite
 // key (aka PublicKeyToHandle to be used as a valid Tink key)
 
 const (
-	nistPECDHKWPublicKeyTypeURL   = "type.hyperledger.org/hyperledger.aries.crypto.tink.NistPEcdhKwPublicKey"
-	x25519ECDHKWPublicKeyTypeURL  = "type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPublicKey"
-	nistPECDHKWPrivateKeyTypeURL  = "type.hyperledger.org/hyperledger.aries.crypto.tink.NistPEcdhKwPrivateKey"
-	x25519ECDHKWPrivateKeyTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.X25519EcdhKwPrivateKey"
+	nistPECDHKWPublicKeyTypeURL   = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.NistPEcdhKwPublicKey"
+	x25519ECDHKWPublicKeyTypeURL  = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPublicKey"
+	nistPECDHKWPrivateKeyTypeURL  = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.NistPEcdhKwPrivateKey"
+	x25519ECDHKWPrivateKeyTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.X25519EcdhKwPrivateKey"
 )
 
 //nolint:gochecknoglobals

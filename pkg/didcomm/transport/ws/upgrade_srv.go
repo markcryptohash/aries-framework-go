@@ -18,7 +18,7 @@ import (
 
 // Accept accepts a WebSocket handshake from a client and upgrades the connection to a WebSocket.
 func Accept(w http.ResponseWriter, r *http.Request) (*websocket.Conn, error) {
-	// TODO Allow user to enable InsecureSkipVerify https://github.com/hyperledger/aries-framework-go/issues/928
+	// TODO Allow user to enable InsecureSkipVerify https://github.com/markcryptohash/aries-framework-go/issues/928
 	return websocket.Accept(w, r, &websocket.AcceptOptions{
 		InsecureSkipVerify: true,
 		CompressionMode:    websocket.CompressionDisabled,

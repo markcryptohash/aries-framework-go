@@ -10,8 +10,8 @@ import (
 	"encoding/json"
 	"time"
 
-	docverifiable "github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/store/verifiable"
+	docverifiable "github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/verifiable"
 )
 
 // Credential is model for verifiable credential.

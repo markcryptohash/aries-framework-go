@@ -2,7 +2,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-module github.com/hyperledger/aries-framework-go/test/bdd
+module github.com/markcryptohash/aries-framework-go/test/bdd
 
 go 1.17
 
@@ -13,10 +13,10 @@ require (
 	github.com/fsouza/go-dockerclient v1.6.6
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/mux v1.8.0
-	github.com/hyperledger/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/component/storage/leveldb v0.0.0-20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
+	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storage/leveldb v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
 	github.com/moby/sys/mount v0.2.0 // indirect
 	github.com/moby/term v0.0.0-20201110203204-bea5bbe245bf // indirect
 	github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2
@@ -48,8 +48,8 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.3 // indirect
 	github.com/google/tink/go v1.6.1 // indirect
-	github.com/hyperledger/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c // indirect
-	github.com/hyperledger/ursa-wrapper-go v0.3.1 // indirect
+	github.com/markcryptohash/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c // indirect
+	github.com/markcryptohash/ursa-wrapper-go v0.3.1 // indirect
 	github.com/jinzhu/copier v0.0.0-20190924061706-b57f9002281a // indirect
 	github.com/kawamuray/jsonpath v0.0.0-20201211160320-7483bafabd7e // indirect
 	github.com/kilic/bls12-381 v0.1.1-0.20210503002446-7b7597926c69 // indirect
@@ -94,9 +94,9 @@ require (
 )
 
 replace (
-	github.com/hyperledger/aries-framework-go => ../..
-	github.com/hyperledger/aries-framework-go/component/storage/leveldb => ../../component/storage/leveldb
-	github.com/hyperledger/aries-framework-go/component/storageutil => ../../component/storageutil
-	github.com/hyperledger/aries-framework-go/spi => ../../spi
-	github.com/hyperledger/aries-framework-go/test/component => ../../test/component
+	github.com/markcryptohash/aries-framework-go => ../..
+	github.com/markcryptohash/aries-framework-go/component/storage/leveldb => ../../component/storage/leveldb
+	github.com/markcryptohash/aries-framework-go/component/storageutil => ../../component/storageutil
+	github.com/markcryptohash/aries-framework-go/spi => ../../spi
+	github.com/markcryptohash/aries-framework-go/test/component => ../../test/component
 )

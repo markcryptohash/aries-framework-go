@@ -1,5 +1,5 @@
 {
-  "name": "@hyperledger/aries-framework-go",
+  "name": "@markcryptohash/aries-framework-go",
   "version": "0.0.1",
   "main": "dist/node/aries.js",
   "browser": "dist/web/aries.js",
@@ -15,24 +15,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hyperledger/aries-framework-go.git"
+    "url": "git://github.com/markcryptohash/aries-framework-go.git"
   },
   "keywords": [
     "aries",
     "ssi",
     "agent",
     "didcomm",
-    "hyperledger"
+    "markcryptohash"
   ],
   "files": [
     "dist"
   ],
-  "author": "hyperledger/aries",
+  "author": "markcryptohash/aries",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/hyperledger/aries-framework-go/issues"
+    "url": "https://github.com/markcryptohash/aries-framework-go/issues"
   },
-  "homepage": "https://github.com/hyperledger/aries-framework-go#readme",
+  "homepage": "https://github.com/markcryptohash/aries-framework-go#readme",
   "devDependencies": {
     "clean-webpack-plugin": "4.0.0",
     "copy-webpack-plugin": "^6.4.1",

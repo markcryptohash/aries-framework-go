@@ -11,8 +11,8 @@ package httpbinding
 import (
 	"strings"
 
-	diddoc "github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
+	diddoc "github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
 )
 
 // interopPreprocess in a ACAPyInterop build, this converts public sov did docs into a usable format.

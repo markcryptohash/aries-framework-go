@@ -41,7 +41,7 @@ This controller provides access to the [key management service](./01_terminologi
 
 This controller allows an agent to (un)register itself with a [mediator](./01_terminologies.md#mediator), view connection details and statuses.
 
-The project can be used as a DIDComm [Router/Mediator](https://github.com/hyperledger/aries-framework-go/blob/master/docs/didcomm_mediator.md).
+The project can be used as a DIDComm [Router/Mediator](https://github.com/markcryptohash/aries-framework-go/blob/master/docs/didcomm_mediator.md).
 
 ### 6. Messaging
 
@@ -68,11 +68,11 @@ This controller allows for the creation, retrieval, validation and signing of [v
 ---
 ###### References
 
-1. [Official library page](https://www.hyperledger.org/use/aries)
-2. [Blog post annoucement](https://www.hyperledger.org/blog/2019/05/14/announcing-hyperledger-aries-infrastructure-supporting-interoperable-identity-solutions)
-3. [Hyperledger Aries Wiki](https://wiki.hyperledger.org/display/ARIES/Hyperledger+Aries)
-4. [Aries RFCs - DIDExchange](https://github.com/hyperledger/aries-rfcs/tree/master/features/0023-did-exchange)
-5. [Aries RFCs - Introduce](https://github.com/hyperledger/aries-rfcs/tree/master/features/0028-introduce)
-6. [Aries RFCs - IssueCredential Choreography Diagram](https://github.com/hyperledger/aries-rfcs/tree/master/features/0453-issue-credential-v2#choreography-diagram)
-7. [Aries RFCs - Out-Of-Band](https://github.com/hyperledger/aries-rfcs/tree/master/features/0434-outofband)
-8. [Aries RFCs - Present Proof](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+1. [Official library page](https://www.markcryptohash.org/use/aries)
+2. [Blog post annoucement](https://www.markcryptohash.org/blog/2019/05/14/announcing-markcryptohash-aries-infrastructure-supporting-interoperable-identity-solutions)
+3. [Hyperledger Aries Wiki](https://wiki.markcryptohash.org/display/ARIES/Hyperledger+Aries)
+4. [Aries RFCs - DIDExchange](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0023-did-exchange)
+5. [Aries RFCs - Introduce](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0028-introduce)
+6. [Aries RFCs - IssueCredential Choreography Diagram](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0453-issue-credential-v2#choreography-diagram)
+7. [Aries RFCs - Out-Of-Band](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0434-outofband)
+8. [Aries RFCs - Present Proof](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)

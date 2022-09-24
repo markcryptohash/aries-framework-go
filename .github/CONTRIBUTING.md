@@ -2,7 +2,7 @@
 
 *We are still working on improving these guidelines.*
 
-Thank you for taking the time to contribute to `hyperledger/aries-framework-go`!
+Thank you for taking the time to contribute to `markcryptohash/aries-framework-go`!
 
 There are several ways you can contribute:
 
@@ -14,10 +14,10 @@ There are several ways you can contribute:
 
 You can submit new ideas or proposals for enhancements just like any other
 GitHub issue.  Tag one of the
-[maintainers](https://github.com/orgs/hyperledger/teams/aries-framework-go-committers)
+[maintainers](https://github.com/orgs/markcryptohash/teams/aries-framework-go-committers)
 in your proposal's description to get their attention.  Your proposal will be
 pulled into one of the project's
-[boards](https://github.com/hyperledger/aries-framework-go/projects) once the
+[boards](https://github.com/markcryptohash/aries-framework-go/projects) once the
 proposal is deemed to be worth pursuing.  From there, further discovery may be
 required before actual implementation work gets started.
 
@@ -30,7 +30,7 @@ include a code sample that illustrates the test case. Use the
 * **Required:** make sure your system satisfies all the pre-requisites listed
 in the `README`
 * **Required:** ensure the bug is not a duplicate already reported under
-[Issues](https://github.com/hyperledger/aries-framework-go/issues)
+[Issues](https://github.com/markcryptohash/aries-framework-go/issues)
 
 ## Pull Request
 

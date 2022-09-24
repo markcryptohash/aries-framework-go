@@ -13,16 +13,16 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/kmsdidkey"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/kmsdidkey"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -211,7 +211,7 @@ func (c *Client) CreateInvitation(label string, args ...InvOpt) (*Invitation, er
 		}
 	}
 
-	// TODO https://github.com/hyperledger/aries-framework-go/issues/623 'alias' should be passed as arg and persisted
+	// TODO https://github.com/markcryptohash/aries-framework-go/issues/623 'alias' should be passed as arg and persisted
 	//  with connection record
 	_, pubKey, err := c.kms.CreateAndExportPubKeyBytes(keyType)
 	if err != nil {
@@ -305,7 +305,7 @@ func (c *Client) HandleInvitation(invitation *Invitation) (string, error) {
 	return connectionID, nil
 }
 
-// TODO https://github.com/hyperledger/aries-framework-go/issues/754 - e.Continue v Explicit API call for action events
+// TODO https://github.com/markcryptohash/aries-framework-go/issues/754 - e.Continue v Explicit API call for action events
 
 // AcceptInvitation accepts/approves exchange invitation. This call is not used if auto execute is setup
 // for this client (see package example for more details about how to setup auto execute).
@@ -348,7 +348,7 @@ func (c *Client) CreateImplicitInvitationWithDID(inviter, invitee *DIDInfo) (str
 
 // QueryConnections queries connections matching given criteria(parameters).
 func (c *Client) QueryConnections(request *QueryConnectionsParams) ([]*Connection, error) { //nolint: gocyclo
-	// TODO https://github.com/hyperledger/aries-framework-go/issues/655 - query all connections from all criteria and
+	// TODO https://github.com/markcryptohash/aries-framework-go/issues/655 - query all connections from all criteria and
 	//  also results needs to be paged.
 	records, err := c.connectionStore.QueryConnectionRecords()
 	if err != nil {

@@ -14,14 +14,14 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/didcommwallet"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/vcwallet"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/didcommwallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/vcwallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // All command operations.
@@ -366,7 +366,7 @@ func (o *Operation) Connect(rw http.ResponseWriter, req *http.Request) {
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposepresentation
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 //
 // Responses:
 //    default: genericError
@@ -381,7 +381,7 @@ func (o *Operation) ProposePresentation(rw http.ResponseWriter, req *http.Reques
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#presentproof
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 //
 // Responses:
 //    default: genericError
@@ -396,7 +396,7 @@ func (o *Operation) PresentProof(rw http.ResponseWriter, req *http.Request) {
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposecredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 // Responses:
 //    default: genericError
@@ -411,7 +411,7 @@ func (o *Operation) ProposeCredential(rw http.ResponseWriter, req *http.Request)
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#requestcredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 // Responses:
 //    default: genericError

@@ -14,8 +14,8 @@ package ecdsasecp256k1signature2019
 import (
 	"crypto/sha256"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite"
 )
 
 // Suite implements EcdsaSecp256k1Signature2019 signature suite.

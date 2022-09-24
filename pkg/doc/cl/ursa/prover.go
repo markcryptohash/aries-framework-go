@@ -12,8 +12,8 @@ package ursa
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cl"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cl"
 )
 
 // Prover is an ursa implementation of the CL Prover API.

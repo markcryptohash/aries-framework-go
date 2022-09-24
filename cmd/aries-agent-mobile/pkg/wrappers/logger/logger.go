@@ -10,8 +10,8 @@ package logger
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/api"
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/api"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 // New returns new Logger.

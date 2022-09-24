@@ -6,8 +6,8 @@ SPDX-License-Identifier: Apache-2.0
 
 // Package bbs12381g2pub contains BBS+ signing primitives and keys. Although it can be used directly, it is recommended
 // to use BBS+ keys created by the kms along with the framework's Crypto service.
-// The default local Crypto service is found at: "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto"
-//  while the remote Crypto service is found at: "github.com/hyperledger/aries-framework-go/pkg/crypto/webkms"
+// The default local Crypto service is found at: "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto"
+//  while the remote Crypto service is found at: "github.com/markcryptohash/aries-framework-go/pkg/crypto/webkms"
 package bbs12381g2pub
 
 import (

@@ -14,8 +14,8 @@ import (
 
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/presexch"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/presexch"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
 )
 
 // Query errors.

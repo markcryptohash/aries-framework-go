@@ -35,7 +35,7 @@ Flags:
       --rfc0593-auto-execute string        Enables automatic execution of the issue-credential protocol withRFC0593-compliant attachment formats. Default is false. Alternatively, this can be set with the following environment variable: ARIESD_RFC0593_AUTO_EXECUTE
   -c, --tls-cert-file string               tls certificate file. Alternatively, this can be set with the following environment variable: TLS_CERT_FILE
   -k, --tls-key-file string                tls key file. Alternatively, this can be set with the following environment variable: TLS_KEY_FILE
-      --transport-return-route string      Transport Return Route option. Refer https://github.com/hyperledger/aries-framework-go/blob/8449c727c7c44f47ed7c9f10f35f0cd051dcb4e9/pkg/framework/aries/framework.go#L165-L168. Alternatively, this can be set with the following environment variable: ARIESD_TRANSPORT_RETURN_ROUTE
+      --transport-return-route string      Transport Return Route option. Refer https://github.com/markcryptohash/aries-framework-go/blob/8449c727c7c44f47ed7c9f10f35f0cd051dcb4e9/pkg/framework/aries/framework.go#L165-L168. Alternatively, this can be set with the following environment variable: ARIESD_TRANSPORT_RETURN_ROUTE
       --web-socket-read-limit string       WebSocket read limit sets the custom max number of bytes to read for a single message when WebSocket transport is used. Defaults to 32kB. Alternatively, this can be set with the following environment variable: ARIESD_WEB_SOCKET_READ_LIMIT
   -w, --webhook-url strings                URL to send notifications to. This flag can be repeated, allowing for multiple listeners. Alternatively, this can be set with the following environment variable (in CSV format): ARIESD_WEBHOOK_URL
 

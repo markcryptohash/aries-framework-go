@@ -18,9 +18,9 @@ import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 	"github.com/stretchr/testify/require"
 
-	cbcaead "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
-	ecdhpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/cryptoutil"
+	cbcaead "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
+	ecdhpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/cryptoutil"
 )
 
 func TestECDHX25519XChachaPrivateKeyManager_Primitive(t *testing.T) {

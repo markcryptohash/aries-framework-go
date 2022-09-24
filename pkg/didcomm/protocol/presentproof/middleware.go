@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package presentproof
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
 )
 
 // Handler describes middleware interface.

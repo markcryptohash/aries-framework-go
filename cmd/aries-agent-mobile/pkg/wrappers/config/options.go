@@ -9,8 +9,8 @@ package config
 import (
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/api"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/messaging/msghandler"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/api"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/messaging/msghandler"
 )
 
 // Options represents configurations for Aries.

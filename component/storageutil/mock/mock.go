@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package mock
 
 import (
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // Provider is a mocked implementation of spi.Provider.

@@ -14,11 +14,11 @@ import (
 	"github.com/piprate/json-gold/ld"
 	"github.com/stretchr/testify/require"
 
-	jld "github.com/hyperledger/aries-framework-go/pkg/doc/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	mockldstore "github.com/hyperledger/aries-framework-go/pkg/mock/ld"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
+	jld "github.com/markcryptohash/aries-framework-go/pkg/doc/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	mockldstore "github.com/markcryptohash/aries-framework-go/pkg/mock/ld"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
 )
 
 type mockLoader struct {

@@ -28,13 +28,13 @@ import (
 	jsonld "github.com/piprate/json-gold/ld"
 	"github.com/square/go-jose/v3"
 
-	"github.com/hyperledger/aries-framework-go/component/storageutil/mem"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	ldstore "github.com/hyperledger/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/component/storageutil/mem"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	ldstore "github.com/markcryptohash/aries-framework-go/pkg/store/ld"
 )
 
 var logger = log.New("aries-framework/doc/verifiable/test-suite")

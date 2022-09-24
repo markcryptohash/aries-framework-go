@@ -12,7 +12,7 @@ import (
 
 	"github.com/btcsuite/btcd/btcec"
 
-	kmsapi "github.com/hyperledger/aries-framework-go/pkg/kms"
+	kmsapi "github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // MapECCurveToKeyType makes a mapping of Elliptic Curve to KeyType of kms.

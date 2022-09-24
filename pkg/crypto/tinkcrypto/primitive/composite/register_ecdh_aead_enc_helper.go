@@ -22,13 +22,13 @@ import (
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/poly1305"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
-	cbchmacpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_hmac_aead_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
+	cbchmacpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_hmac_aead_go_proto"
 )
 
 const (
 	// AESCBCHMACAEADTypeURL for AESCBC+HMAC AEAD content encryption URL.
-	AESCBCHMACAEADTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.AesCbcHmacAeadKey"
+	AESCBCHMACAEADTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.AesCbcHmacAeadKey"
 	// AESGCMTypeURL for AESGCM content encryption URL identifier.
 	AESGCMTypeURL = "type.googleapis.com/google.crypto.tink.AesGcmKey"
 	// ChaCha20Poly1305TypeURL for Chacha20Poly1305 content encryption URL identifier.

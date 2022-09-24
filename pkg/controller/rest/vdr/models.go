@@ -9,9 +9,9 @@ package vdr
 import (
 	"encoding/json"
 
-	vdrcommand "github.com/hyperledger/aries-framework-go/pkg/controller/command/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	didstore "github.com/hyperledger/aries-framework-go/pkg/store/did"
+	vdrcommand "github.com/markcryptohash/aries-framework-go/pkg/controller/command/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	didstore "github.com/markcryptohash/aries-framework-go/pkg/store/did"
 )
 
 // saveDIDReq model

@@ -8,7 +8,7 @@ package verifiable
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/jsonld"
 )
 
 // AddLinkedDataProof appends proof to the Verifiable Credential.

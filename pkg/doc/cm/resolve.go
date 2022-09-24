@@ -15,7 +15,7 @@ import (
 	"github.com/PaesslerAG/gval"
 	"github.com/PaesslerAG/jsonpath"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
 )
 
 // ResolvedProperty contains resolved result for each resolved property.

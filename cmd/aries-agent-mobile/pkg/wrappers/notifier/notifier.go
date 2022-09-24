@@ -10,7 +10,7 @@ package notifier
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/webnotifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/webnotifier"
 )
 
 // NotificationPayload represent notification payload.

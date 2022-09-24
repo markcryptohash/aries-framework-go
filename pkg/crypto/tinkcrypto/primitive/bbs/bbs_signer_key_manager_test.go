@@ -15,7 +15,7 @@ import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 	"github.com/stretchr/testify/require"
 
-	bbspb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
+	bbspb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
 )
 
 func TestBBSignerKeyManager_Primitive(t *testing.T) {

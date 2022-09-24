@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package ld
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
 )
 
 // addContextsReq model for adding new JSON-LD contexts.

@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
 )
 
 const (

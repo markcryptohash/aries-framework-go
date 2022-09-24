@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	cmdpresproof "github.com/hyperledger/aries-framework-go/pkg/controller/command/presentproof"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	cmdpresproof "github.com/markcryptohash/aries-framework-go/pkg/controller/command/presentproof"
 )
 
 func getPresentProofController(t *testing.T) *PresentProof {

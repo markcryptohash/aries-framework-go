@@ -15,11 +15,11 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/introduce"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	protocol "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/introduce"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/introduce"
-	mocknotifier "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/introduce"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	protocol "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/introduce"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/introduce"
+	mocknotifier "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/controller/webnotifier"
 )
 
 func TestNew(t *testing.T) {

@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher"
 )
 
 const errNeverRegistered = "failed to unregister, unable to find registered message service with name `%s`"

@@ -13,11 +13,11 @@ import (
 	jsonld "github.com/piprate/json-gold/ld"
 	"github.com/xeipuuv/gojsonschema"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	docjsonld "github.com/hyperledger/aries-framework-go/pkg/doc/jsonld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jwt"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	jsonutil "github.com/hyperledger/aries-framework-go/pkg/doc/util/json"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	docjsonld "github.com/markcryptohash/aries-framework-go/pkg/doc/jsonld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jwt"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	jsonutil "github.com/markcryptohash/aries-framework-go/pkg/doc/util/json"
 )
 
 const basePresentationSchema = `

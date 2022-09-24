@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package cm
 
-import "github.com/hyperledger/aries-framework-go/pkg/doc/presexch"
+import "github.com/markcryptohash/aries-framework-go/pkg/doc/presexch"
 
 // hasAnyAlgorithmsOrProofTypes looks at the given Format object and determines if it has any algorithms or proof types
 // listed.

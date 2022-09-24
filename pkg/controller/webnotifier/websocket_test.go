@@ -17,7 +17,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"nhooyr.io/websocket"
 
-	"github.com/hyperledger/aries-framework-go/pkg/internal/test/transportutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/test/transportutil"
 )
 
 func TestConnectionsWS(t *testing.T) {

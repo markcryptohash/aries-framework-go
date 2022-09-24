@@ -14,10 +14,10 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/presentproof"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/presentproof"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/presentproof"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/presentproof"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
 )
 
 const (

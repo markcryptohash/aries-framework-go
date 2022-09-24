@@ -14,11 +14,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext/remote"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ldtestutil"
-	mockld "github.com/hyperledger/aries-framework-go/pkg/mock/ld"
-	mockprovider "github.com/hyperledger/aries-framework-go/pkg/mock/provider"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext/remote"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ldtestutil"
+	mockld "github.com/markcryptohash/aries-framework-go/pkg/mock/ld"
+	mockprovider "github.com/markcryptohash/aries-framework-go/pkg/mock/provider"
 )
 
 const sampleContextsResponse = `{

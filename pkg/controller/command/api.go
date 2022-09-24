@@ -9,7 +9,7 @@ package command
 import (
 	"io"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/dispatcher"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/dispatcher"
 )
 
 // Exec is controller command execution function type.

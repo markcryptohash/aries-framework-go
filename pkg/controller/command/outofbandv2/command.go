@@ -12,12 +12,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	outofbandv2svc "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	outofbandv2svc "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
 )
 
 const (

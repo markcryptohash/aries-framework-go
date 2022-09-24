@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package presentproof
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/client/presentproof"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/presentproof"
 )
 
 // DeclinePresentationArgs model

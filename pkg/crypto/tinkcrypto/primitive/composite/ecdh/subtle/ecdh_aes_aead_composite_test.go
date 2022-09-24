@@ -20,7 +20,7 @@ import (
 	"github.com/google/tink/go/tink"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite"
 )
 
 func TestEncryptDecrypt(t *testing.T) {

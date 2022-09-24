@@ -21,9 +21,9 @@ import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 	"github.com/google/tink/go/subtle"
 
-	bbspb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
-	clpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/cl_go_proto"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	bbspb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
+	clpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/cl_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 func publicKeyBytesToHandle(pubKey []byte, kt kms.KeyType, opts ...kms.KeyOpts) (*keyset.Handle, error) {

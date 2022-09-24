@@ -63,9 +63,9 @@ The aries verifiable credential wallet provides various DIDComm operations to pe
 * A wallet profile with local KMS can be created by providing passphrase or secret lock service option.
 * A wallet profile with Remote KMS can be created by providing secret lock service option.
 * A wallet profile with EDV as storage type can be created by providing EDV storage options like edv server URL, Vault ID, encryption key ID and mac operation key ID.
-This profile will use [aries EDV client implementation](https://github.com/hyperledger/aries-framework-go/blob/main/component/storage/edv) for performing encrypted data vault operations.
+This profile will use [aries EDV client implementation](https://github.com/markcryptohash/aries-framework-go/blob/main/component/storage/edv) for performing encrypted data vault operations.
 
-Refer Aries Go Docs for [ProfileOptions](https://github.com/hyperledger/aries-framework-go/blob/main/pkg/wallet/options.go#L33-L69) for different options for creating wallet profiles.
+Refer Aries Go Docs for [ProfileOptions](https://github.com/markcryptohash/aries-framework-go/blob/main/pkg/wallet/options.go#L33-L69) for different options for creating wallet profiles.
 
 > Aries Go SDK Sample for creating wallet profile
 ```
@@ -133,7 +133,7 @@ err = myWallet.Open(wallet.WithUnlockWebKMSOptions(opts...), wallet.WithUnlockED
 
 ```
 
-Refer Go Docs for [UnlockOptions](https://github.com/hyperledger/aries-framework-go/blob/main/pkg/wallet/options.go#L92-L140) various wallet unlock options.
+Refer Go Docs for [UnlockOptions](https://github.com/markcryptohash/aries-framework-go/blob/main/pkg/wallet/options.go#L92-L140) various wallet unlock options.
 
 
 ## Closing a Wallet
@@ -389,7 +389,7 @@ Params,
     * challenge (optional) -  is a random or pseudo-random value option for generating digital proof.
     * proof type (optional) - is signature type used for signing. Default, Ed25519Signature2018.
     * proof representation (optional) -  is type of proof data expected. Default, "proofValue".
-Refer [Go Docs](https://github.com/hyperledger/aries-framework-go/blob/main/pkg/wallet/options.go#L157-L197) for more details.
+Refer [Go Docs](https://github.com/markcryptohash/aries-framework-go/blob/main/pkg/wallet/options.go#L157-L197) for more details.
 
 Returns,
 * *verifiable.Presentation - presentation produced of aries verifiable presentation data model type.
@@ -474,7 +474,7 @@ Returns,
 Creates key pair inside a wallet, imports private key into wallet and returns key ID and public key bytes.
 
 Params,
-* key Type - all supported [key types](https://github.com/hyperledger/aries-framework-go/blob/34ff560ed041fd9d3255a0c8c7f99c584c1c0a74/pkg/kms/api.go#L125-L171) by aries.
+* key Type - all supported [key types](https://github.com/markcryptohash/aries-framework-go/blob/34ff560ed041fd9d3255a0c8c7f99c584c1c0a74/pkg/kms/api.go#L125-L171) by aries.
 
 Returns,
 * KeyPair - key pair result.
@@ -561,7 +561,7 @@ Params,
    
   ``` 
 
-#### [Connect](https://github.com/hyperledger/aries-rfcs/blob/master/features/0434-outofband/README.md)
+#### [Connect](https://github.com/markcryptohash/aries-rfcs/blob/master/features/0434-outofband/README.md)
 Performs out of band DID exchange from wallet by accepting out of band invitation.
 
 Params,
@@ -745,11 +745,11 @@ Returns,
 ## Controller Bindings
 Aries command controller supports all verifiable credential wallet features with many more customization options like Authorization Capabilities (ZCAP-LD) feature for wallet's EDV and WebKMS components.
 
-Refer [Go Docs](https://github.com/hyperledger/aries-framework-go/blob/main/pkg/controller/command/vcwallet/command.go) for package for more details.
+Refer [Go Docs](https://github.com/markcryptohash/aries-framework-go/blob/main/pkg/controller/command/vcwallet/command.go) for package for more details.
 
 
 #### JavaScript
-Aries verifiable credential wallet is [available](https://github.com/hyperledger/aries-framework-go/blob/main/cmd/aries-js-worker/src/aries.js#L1080-L1273) as both Aries JavaScript WebAssembly and REST JS versions.
+Aries verifiable credential wallet is [available](https://github.com/markcryptohash/aries-framework-go/blob/main/cmd/aries-js-worker/src/aries.js#L1080-L1273) as both Aries JavaScript WebAssembly and REST JS versions.
   > Sample Aries JS wallet operations.
   ```
   

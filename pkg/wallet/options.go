@@ -10,11 +10,11 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/component/storage/edv"
-	"github.com/hyperledger/aries-framework-go/pkg/client/outofband"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/webkms"
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock"
+	"github.com/markcryptohash/aries-framework-go/component/storage/edv"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/outofband"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/webkms"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock"
 )
 
 // profileOpts contains options for creating verifiable credential wallet.

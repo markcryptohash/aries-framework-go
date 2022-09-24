@@ -17,14 +17,14 @@ import (
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 	"github.com/google/tink/go/subtle"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
-	bbssubtle "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/bbs/subtle"
-	bbspb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
+	bbssubtle "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/bbs/subtle"
+	bbspb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
 )
 
 const (
 	bbsSignerKeyVersion = 0
-	bbsSignerKeyTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.BBSPrivateKey"
+	bbsSignerKeyTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.BBSPrivateKey"
 )
 
 // common errors.

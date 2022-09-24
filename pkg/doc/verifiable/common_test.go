@@ -13,9 +13,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	mockvdr "github.com/hyperledger/aries-framework-go/pkg/mock/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	mockvdr "github.com/markcryptohash/aries-framework-go/pkg/mock/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr"
 )
 
 func TestJwtAlgorithm_Name(t *testing.T) {

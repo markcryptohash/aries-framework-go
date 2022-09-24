@@ -16,7 +16,7 @@ import (
 	"github.com/google/tink/go/core/registry"
 	"github.com/google/tink/go/keyset"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
 )
 
 func Example() {
@@ -49,7 +49,7 @@ func Example() {
 }
 
 func TestAEADInit(t *testing.T) {
-	aesCBCHMACAEADTypeURL := "type.hyperledger.org/hyperledger.aries.crypto.tink.AesCbcHmacAeadKey"
+	aesCBCHMACAEADTypeURL := "type.markcryptohash.org/markcryptohash.aries.crypto.tink.AesCbcHmacAeadKey"
 
 	// Check for CBC-HMAC key manager.
 	_, err := registry.GetKeyManager(aesCBCHMACAEADTypeURL)

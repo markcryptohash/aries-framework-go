@@ -13,9 +13,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	mockkms "github.com/hyperledger/aries-framework-go/pkg/mock/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/mock/secretlock"
-	mockstorage "github.com/hyperledger/aries-framework-go/pkg/mock/storage"
+	mockkms "github.com/markcryptohash/aries-framework-go/pkg/mock/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/mock/secretlock"
+	mockstorage "github.com/markcryptohash/aries-framework-go/pkg/mock/storage"
 )
 
 const (

@@ -15,11 +15,11 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	commonpb "github.com/google/tink/go/proto/common_go_proto"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/jwkkid"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
-	didfingerprint "github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint/didfp"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/jwkkid"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
+	didfingerprint "github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint/didfp"
 )
 
 // keyTypeCodecs maps kms.KeyType to did:key codec.

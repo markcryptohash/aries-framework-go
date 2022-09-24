@@ -9,7 +9,7 @@ package suite
 import (
 	"errors"
 
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
 )
 
 // SignatureSuite defines general signature suite structure.

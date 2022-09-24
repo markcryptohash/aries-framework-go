@@ -15,9 +15,9 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/component/storage/indexeddb"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
-	commontest "github.com/hyperledger/aries-framework-go/test/component/storage"
+	"github.com/markcryptohash/aries-framework-go/component/storage/indexeddb"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
+	commontest "github.com/markcryptohash/aries-framework-go/test/component/storage"
 )
 
 const sampleDBName = "testdb"

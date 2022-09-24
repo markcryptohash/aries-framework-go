@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries"
 )
 
 func TestWithInboundHTTPPort(t *testing.T) {

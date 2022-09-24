@@ -16,8 +16,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
 )
 
 var logger = log.New("aries-agent-mobile/wrappers/rest")

@@ -14,8 +14,8 @@
 //
 // RFC Reference:
 //
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md
 //
 package http
 
@@ -25,9 +25,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
 )
 
 const (
@@ -66,8 +66,8 @@ type RequestHandle func(msgID string, request *http.Request) error
 //
 // Reference:
 //
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0335-http-over-didcomm/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0351-purpose-decorator/README.md
 //
 // Args:
 //

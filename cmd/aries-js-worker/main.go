@@ -21,16 +21,16 @@ import (
 	"github.com/google/uuid"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hyperledger/aries-framework-go/component/storage/indexeddb"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller"
-	cmdctrl "github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/messaging/msghandler"
-	arieshttp "github.com/hyperledger/aries-framework-go/pkg/didcomm/transport/http"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport/ws"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/httpbinding"
-	spilog "github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/component/storage/indexeddb"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller"
+	cmdctrl "github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/messaging/msghandler"
+	arieshttp "github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport/http"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport/ws"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/httpbinding"
+	spilog "github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 func init() {

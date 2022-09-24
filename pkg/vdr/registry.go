@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"strings"
 
-	diddoc "github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/peer"
+	diddoc "github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/peer"
 )
 
 // Option is a vdr instance option.
@@ -176,7 +176,7 @@ func WithDefaultServiceEndpoint(serviceEndpoint string) Option {
 
 // GetDidMethod get did method.
 func GetDidMethod(didID string) (string, error) {
-	// TODO https://github.com/hyperledger/aries-framework-go/issues/20 Validate that the input DID conforms to
+	// TODO https://github.com/markcryptohash/aries-framework-go/issues/20 Validate that the input DID conforms to
 	//  the did rule of the Generic DID Syntax. Reference: https://w3c-ccg.github.io/did-spec/#generic-did-syntax
 	// For now we do simple validation
 	const numPartsDID = 3

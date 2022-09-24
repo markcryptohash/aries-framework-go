@@ -11,10 +11,10 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	oobv2 "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	oobv2 "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 const (
@@ -54,7 +54,7 @@ type Provider interface {
 }
 
 // Client for the Out-Of-Band protocol:
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0434-outofband/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0434-outofband/README.md
 type Client struct {
 	oobService        OobService
 	mediaTypeProfiles []string

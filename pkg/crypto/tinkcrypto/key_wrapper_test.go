@@ -28,10 +28,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/curve25519"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/keyio"
-	ecdhpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/ecdh"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/composite/keyio"
+	ecdhpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/ecdh_aead_go_proto"
 )
 
 type mockKeyWrapperSupport struct {
@@ -285,7 +285,7 @@ func Test_ksToPrivateECDSAKey_Failure(t *testing.T) {
 
 	_, err = ksToPrivateECDSAKey(recipientKeyPub)
 	require.EqualError(t, err, "ksToPrivateECDSAKey: failed to extract sender key: extractPrivKey: "+
-		"can't extract unsupported private key 'type.hyperledger.org/hyperledger.aries.crypto.tink"+
+		"can't extract unsupported private key 'type.markcryptohash.org/markcryptohash.aries.crypto.tink"+
 		".NistPEcdhKwPublicKey'")
 }
 

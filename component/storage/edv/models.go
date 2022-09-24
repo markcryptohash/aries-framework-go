@@ -9,7 +9,7 @@ package edv
 import (
 	"encoding/json"
 
-	spi "github.com/hyperledger/aries-framework-go/spi/storage"
+	spi "github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // structuredDocument represents a Structured Document for use with Aries. It's compatible with the model

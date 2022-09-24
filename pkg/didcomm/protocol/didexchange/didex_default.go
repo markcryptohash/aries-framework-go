@@ -11,7 +11,7 @@ package didexchange
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
 )
 
 const (
@@ -20,7 +20,7 @@ const (
 
 // Interop: this is a stub method, that is substituted for special functionality
 //   when the ACAPyInterop flag is enabled.
-//   This can be removed when https://github.com/hyperledger/aries-cloudagent-python/issues/1048 is fixed.
+//   This can be removed when https://github.com/markcryptohash/aries-cloudagent-python/issues/1048 is fixed.
 func convertPeerToSov(doc *did.Doc) (*did.Doc, error) {
 	return doc, nil
 }

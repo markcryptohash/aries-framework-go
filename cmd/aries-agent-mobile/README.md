@@ -1,6 +1,6 @@
 # Aries Agent Mobile
 
-Mobile bindings for the [Aries Framework Go](https://github.com/hyperledger/aries-framework-go) library.
+Mobile bindings for the [Aries Framework Go](https://github.com/markcryptohash/aries-framework-go) library.
 > Note: these bindings are experimental and are subject to frequent changes.
 
 ## 1. Requirements
@@ -68,12 +68,12 @@ This is an example of how the imported module can be used:
 <p>
 
 ```java
-import org.hyperledger.aries.api.AriesController;
-import org.hyperledger.aries.api.IntroduceController;
-import org.hyperledger.aries.ariesagent.Ariesagent;
-import org.hyperledger.aries.models.RequestEnvelope;
-import org.hyperledger.aries.models.ResponseEnvelope;
-import org.hyperledger.aries.config.Options;
+import org.markcryptohash.aries.api.AriesController;
+import org.markcryptohash.aries.api.IntroduceController;
+import org.markcryptohash.aries.ariesagent.Ariesagent;
+import org.markcryptohash.aries.models.RequestEnvelope;
+import org.markcryptohash.aries.models.ResponseEnvelope;
+import org.markcryptohash.aries.config.Options;
 
 import java.nio.charset.StandardCharsets;
 /*
@@ -111,10 +111,10 @@ import java.nio.charset.StandardCharsets;
 <p>
     
 ```kotlin
-import org.hyperledger.aries.ariesagent.Ariesagent
-import org.hyperledger.aries.config.Options
-import org.hyperledger.aries.models.RequestEnvelope
-import org.hyperledger.aries.models.ResponseEnvelope
+import org.markcryptohash.aries.ariesagent.Ariesagent
+import org.markcryptohash.aries.config.Options
+import org.markcryptohash.aries.models.RequestEnvelope
+import org.markcryptohash.aries.models.ResponseEnvelope
 import java.nio.charset.StandardCharsets
 /*
 ...
@@ -153,7 +153,7 @@ To subscribe to events on an Aries agent, implement the [`Handler`](./pkg/api/ha
 
 import java.nio.charset.StandardCharsets;
 
-import org.hyperledger.aries.api.Handler;
+import org.markcryptohash.aries.api.Handler;
 
 class MyHandler implements Handler {
 
@@ -197,10 +197,10 @@ class AriesService {
     
 ```kotlin
 
-import org.hyperledger.aries.api.AriesController
-import org.hyperledger.aries.api.Handler
-import org.hyperledger.aries.ariesagent.Ariesagent
-import org.hyperledger.aries.config.Options
+import org.markcryptohash.aries.api.AriesController
+import org.markcryptohash.aries.api.Handler
+import org.markcryptohash.aries.ariesagent.Ariesagent
+import org.markcryptohash.aries.config.Options
 import java.nio.charset.StandardCharsets
 
 class MyHandler : Handler {
@@ -475,4 +475,4 @@ TODO
 
 ## 6. Contribute
 
-See the [guidelines](https://github.com/hyperledger/aries-framework-go/blob/master/.github/CONTRIBUTING.md) from the parent project.
+See the [guidelines](https://github.com/markcryptohash/aries-framework-go/blob/master/.github/CONTRIBUTING.md) from the parent project.

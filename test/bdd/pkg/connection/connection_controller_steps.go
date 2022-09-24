@@ -14,12 +14,12 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/connection"
-	didexcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/didexchange"
-	connectionrest "github.com/hyperledger/aries-framework-go/pkg/controller/rest/connection"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	bddctx "github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/connection"
+	didexcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/didexchange"
+	connectionrest "github.com/markcryptohash/aries-framework-go/pkg/controller/rest/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	bddctx "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 const (

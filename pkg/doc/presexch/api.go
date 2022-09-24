@@ -15,7 +15,7 @@ import (
 	"github.com/PaesslerAG/jsonpath"
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
 )
 
 const (
@@ -127,7 +127,7 @@ func (pd *PresentationDefinition) Match(vp *verifiable.Presentation, // nolint:g
 				inputDescriptor.ID, inputDescriptor.Schema, vc.Context, vc.Types, mapping.Path)
 		}
 
-		// TODO add support for constraints: https://github.com/hyperledger/aries-framework-go/issues/2108
+		// TODO add support for constraints: https://github.com/markcryptohash/aries-framework-go/issues/2108
 
 		result[mapping.ID] = vc
 	}
@@ -142,7 +142,7 @@ func (pd *PresentationDefinition) Match(vp *verifiable.Presentation, // nolint:g
 
 // Ensures the matched credentials meet the submission requirements.
 func (pd *PresentationDefinition) evalSubmissionRequirements(matched map[string]*verifiable.Credential) error {
-	// TODO support submission requirement rules: https://github.com/hyperledger/aries-framework-go/issues/2109
+	// TODO support submission requirement rules: https://github.com/markcryptohash/aries-framework-go/issues/2109
 	descriptorIDs := descriptorIDs(pd.InputDescriptors)
 
 	for i := range descriptorIDs {

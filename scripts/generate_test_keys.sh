@@ -8,7 +8,7 @@
 set -e
 
 echo "Generating Aries-Framework-Go Test PKI"
-cd /opt/go/src/github.com/hyperledger/aries-framework-go
+cd /opt/go/src/github.com/markcryptohash/aries-framework-go
 mkdir -p test/bdd/fixtures/keys/tls
 tmp=$(mktemp)
 echo "subjectKeyIdentifier=hash

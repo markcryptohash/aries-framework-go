@@ -9,11 +9,11 @@ package presentproof
 import (
 	"errors"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/presentproof"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/presentproof"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
 )
 
 type (
@@ -71,7 +71,7 @@ type ProtocolService interface {
 }
 
 // Client enable access to presentproof API
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0037-present-proof
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0037-present-proof
 type Client struct {
 	service.Event
 	service ProtocolService

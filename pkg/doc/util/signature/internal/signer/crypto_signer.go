@@ -14,8 +14,8 @@ import (
 	"errors"
 	"fmt"
 
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
-	kmsapi "github.com/hyperledger/aries-framework-go/pkg/kms"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	kmsapi "github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // CryptoSigner defines signer based on crypto.

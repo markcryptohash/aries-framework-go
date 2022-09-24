@@ -16,8 +16,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	bddcontext "github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	bddcontext "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
 )
 
 // DefaultClient represents default http client.

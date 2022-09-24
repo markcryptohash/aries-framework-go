@@ -10,9 +10,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	bddverifiable "github.com/hyperledger/aries-framework-go/test/bdd/pkg/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	bddverifiable "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/verifiable"
 )
 
 func (s *SDKSteps) issueCredential(issuer, issuedAt, subject, holder string) error {

@@ -14,11 +14,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
 )
 
 const (
@@ -56,7 +56,7 @@ type Timing struct {
 }
 
 // Transport transport decorator
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0092-transport-return-route
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0092-transport-return-route
 type Transport struct {
 	ReturnRoute *ReturnRoute `json:"~transport,omitempty"`
 }
@@ -67,7 +67,7 @@ type ReturnRoute struct {
 }
 
 // Attachment is intended to provide the possibility to include files, links or even JSON payload to the message.
-// To find out more please visit https://github.com/hyperledger/aries-rfcs/tree/master/concepts/0017-attachments
+// To find out more please visit https://github.com/markcryptohash/aries-rfcs/tree/master/concepts/0017-attachments
 type Attachment struct {
 	// ID is a JSON-LD construct that uniquely identifies attached content within the scope of a given message.
 	// Recommended on appended attachment descriptors. Possible but generally unused on embedded attachment descriptors.
@@ -312,7 +312,7 @@ func (d *AttachmentData) Fetch() ([]byte, error) {
 // to redirect after completion of flow.
 type WebRedirect struct {
 	// Status of the operation,
-	// Refer https://github.com/hyperledger/aries-rfcs/blob/main/features/0015-acks/README.md#ack-status.
+	// Refer https://github.com/markcryptohash/aries-rfcs/blob/main/features/0015-acks/README.md#ack-status.
 	Status string `json:"status,omitempty"`
 	// URL to which recipient of this message is being requested to redirect.
 	URL string `json:"url,omitempty"`

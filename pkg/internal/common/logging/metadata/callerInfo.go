@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package metadata
 
 import (
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 func newCallerInfo() *callerInfo {

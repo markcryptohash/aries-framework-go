@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package didexchange
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
 )
 
 // OOBInvitation to connect with did-exchange.
@@ -38,7 +38,7 @@ type OOBInvitation struct {
 // Invitation model
 //
 // Invitation defines DID exchange invitation message
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0023-did-exchange#0-invitation-to-exchange
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0023-did-exchange#0-invitation-to-exchange
 //
 // TODO all uses of this invitation struct should be replaced with the new OOB one. The new one should be renamed
 //  to 'Invitation'.
@@ -70,7 +70,7 @@ type Invitation struct {
 }
 
 // Request defines a2a DID exchange request
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0023-did-exchange#1-exchange-request
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0023-did-exchange#1-exchange-request
 type Request struct {
 	Type   string            `json:"@type,omitempty"`
 	ID     string            `json:"@id,omitempty"`
@@ -87,7 +87,7 @@ type Request struct {
 }
 
 // Response defines a2a DID exchange response
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0023-did-exchange#2-exchange-response
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0023-did-exchange#2-exchange-response
 type Response struct {
 	Type                string               `json:"@type,omitempty"`
 	ID                  string               `json:"@id,omitempty"`
@@ -116,7 +116,7 @@ type Connection struct {
 }
 
 // Complete defines a2a DID exchange complete message.
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0023-did-exchange#3-exchange-complete
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0023-did-exchange#3-exchange-complete
 type Complete struct {
 	Type   string            `json:"@type,omitempty"`
 	ID     string            `json:"@id,omitempty"`

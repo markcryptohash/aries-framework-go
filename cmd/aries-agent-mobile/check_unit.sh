@@ -21,6 +21,6 @@ if [ -f profile.out ]; then
 fi
 }
 
-PKGS=$(go list github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile... 2> /dev/null)
+PKGS=$(go list github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile... 2> /dev/null)
 $GO_TEST_CMD $PKGS -coverprofile=profile.out -count=1 -race -timeout=10m -cover
 amend_coverage_file

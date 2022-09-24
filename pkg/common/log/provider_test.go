@@ -10,8 +10,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/hyperledger/aries-framework-go/pkg/internal/common/logging/modlog"
-	"github.com/hyperledger/aries-framework-go/spi/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/common/logging/modlog"
+	"github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 // TestDefaultLogger tests custom logging feature when custom logging provider is supplied through 'Initialize()' call.

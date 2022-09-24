@@ -2,17 +2,17 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-module github.com/hyperledger/aries-framework-go/cmd/aries-agent-rest
+module github.com/markcryptohash/aries-framework-go/cmd/aries-agent-rest
 
 go 1.17
 
 require (
 	github.com/cenkalti/backoff/v4 v4.1.2
 	github.com/gorilla/mux v1.7.3
-	github.com/hyperledger/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/component/storage/leveldb v0.0.0-20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
+	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storage/leveldb v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
 	github.com/rs/cors v1.7.0
 	github.com/spf13/cobra v1.0.0
 	github.com/stretchr/testify v1.7.2
@@ -35,7 +35,7 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/tink/go v1.6.1 // indirect
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/hyperledger/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c // indirect
+	github.com/markcryptohash/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.8.1 // indirect
@@ -94,18 +94,18 @@ require (
 
 require (
 	github.com/golang/snappy v0.0.3 // indirect
-	github.com/hyperledger/aries-framework-go-ext/component/storage/couchdb v0.0.0-20220629202442-ce8776c10037
-	github.com/hyperledger/aries-framework-go-ext/component/storage/mongodb v0.0.0-20220629202442-ce8776c10037
-	github.com/hyperledger/aries-framework-go-ext/component/storage/mysql v0.0.0-20220629202442-ce8776c10037
-	github.com/hyperledger/aries-framework-go-ext/component/storage/postgresql v0.0.0-20220629202442-ce8776c10037
+	github.com/markcryptohash/aries-framework-go-ext/component/storage/couchdb v0.0.0-20220629202442-ce8776c10037
+	github.com/markcryptohash/aries-framework-go-ext/component/storage/mongodb v0.0.0-20220629202442-ce8776c10037
+	github.com/markcryptohash/aries-framework-go-ext/component/storage/mysql v0.0.0-20220629202442-ce8776c10037
+	github.com/markcryptohash/aries-framework-go-ext/component/storage/postgresql v0.0.0-20220629202442-ce8776c10037
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e // indirect
 )
 
 replace (
-	github.com/hyperledger/aries-framework-go => ../..
-	//	github.com/hyperledger/aries-framework-go/component/storage/edv => ../../component/storage/edv // TODO (#2815) remove this once the wallet package doesn't import edv
-	github.com/hyperledger/aries-framework-go/component/storage/leveldb => ../../component/storage/leveldb
-	github.com/hyperledger/aries-framework-go/component/storageutil => ../../component/storageutil
-	github.com/hyperledger/aries-framework-go/spi => ../../spi
+	github.com/markcryptohash/aries-framework-go => ../..
+	//	github.com/markcryptohash/aries-framework-go/component/storage/edv => ../../component/storage/edv // TODO (#2815) remove this once the wallet package doesn't import edv
+	github.com/markcryptohash/aries-framework-go/component/storage/leveldb => ../../component/storage/leveldb
+	github.com/markcryptohash/aries-framework-go/component/storageutil => ../../component/storageutil
+	github.com/markcryptohash/aries-framework-go/spi => ../../spi
 )

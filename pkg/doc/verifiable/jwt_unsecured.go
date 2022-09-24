@@ -8,8 +8,8 @@ package verifiable
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jwt"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jwt"
 )
 
 func marshalUnsecuredJWT(headers jose.Headers, claims interface{}) (string, error) {

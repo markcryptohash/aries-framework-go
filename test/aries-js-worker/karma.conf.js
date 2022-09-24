@@ -13,12 +13,12 @@ module.exports = function (config) {
             { pattern: "public/aries-framework-go/assets/*", included: false },
             {
                 pattern:
-                    "node_modules/@hyperledger/aries-framework-go/dist/web/*",
+                    "node_modules/@markcryptohash/aries-framework-go/dist/web/*",
                 type: "module",
             },
             {
                 pattern:
-                    "node_modules/@hyperledger/aries-framework-go/dist/rest/*",
+                    "node_modules/@markcryptohash/aries-framework-go/dist/rest/*",
                 type: "module",
             },
             {

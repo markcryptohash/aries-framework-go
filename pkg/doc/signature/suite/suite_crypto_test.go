@@ -12,8 +12,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sigverifier "github.com/hyperledger/aries-framework-go/pkg/doc/signature/verifier"
-	"github.com/hyperledger/aries-framework-go/pkg/mock/crypto"
+	sigverifier "github.com/markcryptohash/aries-framework-go/pkg/doc/signature/verifier"
+	"github.com/markcryptohash/aries-framework-go/pkg/mock/crypto"
 )
 
 func TestNewCryptoSigner(t *testing.T) {

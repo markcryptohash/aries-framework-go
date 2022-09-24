@@ -11,7 +11,7 @@ package signer
 import (
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util"
 )
 
 func wrapTime(t time.Time) *util.TimeWrapper {

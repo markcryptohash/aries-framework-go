@@ -15,10 +15,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	didcomm "github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	didcomm "github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -161,7 +161,7 @@ func (c *Lookup) queryExpectingOne(query string, store storage.Store) (*Record, 
 // QueryConnectionRecords returns connection records found in underlying store
 // for given query criteria.
 func (c *Lookup) QueryConnectionRecords() ([]*Record, error) {
-	// TODO https://github.com/hyperledger/aries-framework-go/issues/655 query criteria to be added as part of issue
+	// TODO https://github.com/markcryptohash/aries-framework-go/issues/655 query criteria to be added as part of issue
 	searchKey := getConnectionKeyPrefix()("")
 
 	var (

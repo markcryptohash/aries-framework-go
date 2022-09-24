@@ -20,8 +20,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	mockpackager "github.com/hyperledger/aries-framework-go/pkg/mock/didcomm/packager"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	mockpackager "github.com/markcryptohash/aries-framework-go/pkg/mock/didcomm/packager"
 )
 
 type mockProvider struct {

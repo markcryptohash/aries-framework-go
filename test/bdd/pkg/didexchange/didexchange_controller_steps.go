@@ -18,22 +18,22 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	didexcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/didexchange"
-	cmdkms "github.com/hyperledger/aries-framework-go/pkg/controller/command/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/sidetree"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	didexcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/didexchange"
+	cmdkms "github.com/markcryptohash/aries-framework-go/pkg/controller/command/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/jose/jwk/jwksupport"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/sidetree"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 const (
 	connOperationID = "/connections"
-	// TODO Remove it after switching packer to use new kms https://github.com/hyperledger/aries-framework-go/issues/1828
+	// TODO Remove it after switching packer to use new kms https://github.com/markcryptohash/aries-framework-go/issues/1828
 	kmsOperationID               = "/kms"
 	createInvitationPath         = connOperationID + "/create-invitation"
 	createImplicitInvitationPath = connOperationID + "/create-implicit-invitation"

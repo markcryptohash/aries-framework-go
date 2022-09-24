@@ -10,8 +10,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	bddverifiable "github.com/hyperledger/aries-framework-go/test/bdd/pkg/verifiable"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	bddverifiable "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/verifiable"
 )
 
 func (s *SDKSteps) createPresentation(holder string) error {

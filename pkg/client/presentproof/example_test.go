@@ -14,15 +14,15 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/component/storageutil/mem"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/messenger"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/presentproof"
-	mocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/client/presentproof"
-	dispatchermocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/didcomm/dispatcher"
-	messengermocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/didcomm/messenger"
-	protocolmocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/didcomm/protocol/presentproof"
-	"github.com/hyperledger/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/component/storageutil/mem"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/messenger"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/presentproof"
+	mocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/client/presentproof"
+	dispatchermocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/didcomm/dispatcher"
+	messengermocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/didcomm/messenger"
+	protocolmocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/didcomm/protocol/presentproof"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/connection"
 )
 
 // payload represents a transport message structure.

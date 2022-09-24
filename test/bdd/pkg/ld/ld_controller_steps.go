@@ -14,10 +14,10 @@ import (
 
 	"github.com/cucumber/godog"
 
-	ldcmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/verifiable"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/context"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/util"
+	ldcmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/verifiable"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/context"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/util"
 )
 
 const (

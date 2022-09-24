@@ -9,7 +9,7 @@ package logutil
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
 )
 
 // LogError is a utility function to log error messages.

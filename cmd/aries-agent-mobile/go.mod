@@ -2,16 +2,16 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-module github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile
+module github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile
 
 go 1.17
 
 require (
 	github.com/google/uuid v1.3.0
-	github.com/hyperledger/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
-	github.com/hyperledger/aries-framework-go/test/component v0.0.0-20220428211718-66cc046674a1
+	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
+	github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220428211718-66cc046674a1
 	github.com/piprate/json-gold v0.4.1
 	github.com/stretchr/testify v1.7.2
 	nhooyr.io/websocket v1.8.3
@@ -31,7 +31,7 @@ require (
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/google/tink/go v1.6.1 // indirect
 	github.com/gorilla/mux v1.7.3 // indirect
-	github.com/hyperledger/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c // indirect
+	github.com/markcryptohash/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c // indirect
 	github.com/jinzhu/copier v0.0.0-20190924061706-b57f9002281a // indirect
 	github.com/kawamuray/jsonpath v0.0.0-20201211160320-7483bafabd7e // indirect
 	github.com/kilic/bls12-381 v0.1.1-0.20210503002446-7b7597926c69 // indirect
@@ -66,8 +66,8 @@ require (
 )
 
 replace (
-	github.com/hyperledger/aries-framework-go => ../../
-	// github.com/hyperledger/aries-framework-go/component/storage/edv => ../../component/storage/edv // TODO (#2815) remove this once the wallet package doesn't import edv
-	github.com/hyperledger/aries-framework-go/component/storageutil => ../../component/storageutil
-	github.com/hyperledger/aries-framework-go/spi => ../../spi
+	github.com/markcryptohash/aries-framework-go => ../../
+	// github.com/markcryptohash/aries-framework-go/component/storage/edv => ../../component/storage/edv // TODO (#2815) remove this once the wallet package doesn't import edv
+	github.com/markcryptohash/aries-framework-go/component/storageutil => ../../component/storageutil
+	github.com/markcryptohash/aries-framework-go/spi => ../../spi
 )

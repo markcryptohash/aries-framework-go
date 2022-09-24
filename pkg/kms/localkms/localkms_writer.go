@@ -13,7 +13,7 @@ import (
 
 	"github.com/google/tink/go/subtle/random"
 
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 const maxKeyIDLen = 50

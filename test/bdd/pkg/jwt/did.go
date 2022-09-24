@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package jwt
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	bddagent "github.com/hyperledger/aries-framework-go/test/bdd/agent"
-	bddDIDExchange "github.com/hyperledger/aries-framework-go/test/bdd/pkg/didexchange"
-	"github.com/hyperledger/aries-framework-go/test/bdd/pkg/didresolver"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	bddagent "github.com/markcryptohash/aries-framework-go/test/bdd/agent"
+	bddDIDExchange "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/didexchange"
+	"github.com/markcryptohash/aries-framework-go/test/bdd/pkg/didresolver"
 )
 
 func (s *SDKSteps) createDID(issuer, holder string) error {

@@ -12,10 +12,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ld"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	mockldstore "github.com/hyperledger/aries-framework-go/pkg/mock/ld"
-	ldstore "github.com/hyperledger/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	mockldstore "github.com/markcryptohash/aries-framework-go/pkg/mock/ld"
+	ldstore "github.com/markcryptohash/aries-framework-go/pkg/store/ld"
 )
 
 // nolint:gochecknoglobals // embedded test contexts

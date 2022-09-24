@@ -13,16 +13,16 @@ import (
 
 	"github.com/piprate/json-gold/ld"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/log"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/vcwallet"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/internal/logutil"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/wallet"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/log"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/vcwallet"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/logutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/wallet"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 var logger = log.New("aries-framework/command/didcommwallet")
@@ -180,7 +180,7 @@ func (o *Command) Connect(rw io.Writer, req io.Reader) command.Error {
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposepresentation
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 func (o *Command) ProposePresentation(rw io.Writer, req io.Reader) command.Error {
 	request := &ProposePresentationRequest{}
 
@@ -230,7 +230,7 @@ func (o *Command) ProposePresentation(rw io.Writer, req io.Reader) command.Error
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#presentproof
 //
 // Currently Supporting
-// [0454-present-proof-v2](https://github.com/hyperledger/aries-rfcs/tree/master/features/0454-present-proof-v2)
+// [0454-present-proof-v2](https://github.com/markcryptohash/aries-rfcs/tree/master/features/0454-present-proof-v2)
 //
 func (o *Command) PresentProof(rw io.Writer, req io.Reader) command.Error {
 	request := &PresentProofRequest{}
@@ -276,7 +276,7 @@ func (o *Command) PresentProof(rw io.Writer, req io.Reader) command.Error {
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#proposecredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 func (o *Command) ProposeCredential(rw io.Writer, req io.Reader) command.Error {
 	request := &ProposeCredentialRequest{}
@@ -328,7 +328,7 @@ func (o *Command) ProposeCredential(rw io.Writer, req io.Reader) command.Error {
 // https://w3c-ccg.github.io/universal-wallet-interop-spec/#requestcredential
 //
 // Currently Supporting : 0453-issueCredentialV2
-// https://github.com/hyperledger/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/main/features/0453-issue-credential-v2/README.md
 //
 func (o *Command) RequestCredential(rw io.Writer, req io.Reader) command.Error {
 	request := &RequestCredentialRequest{}

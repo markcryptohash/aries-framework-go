@@ -17,18 +17,18 @@ import (
 	"github.com/google/uuid"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
-	"github.com/hyperledger/aries-framework-go/pkg/kms/localkms"
-	connectionstore "github.com/hyperledger/aries-framework-go/pkg/store/connection"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	vdrapi "github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms/localkms"
+	connectionstore "github.com/markcryptohash/aries-framework-go/pkg/store/connection"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (
@@ -383,13 +383,13 @@ func (ctx *context) createInvitedRequest(destination *service.Destination, label
 		return nil, nil, fmt.Errorf("getting recipient key: %w", err)
 	}
 
-	// Interop: aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// Interop: aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	requestDidDoc, err := convertPeerToSov(myDIDDoc)
 	if err != nil {
 		return nil, nil, fmt.Errorf("converting my did doc to a 'sov' doc for request message: %w", err)
 	}
 
-	// Interop: aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// Interop: aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	if ctx.doACAPyInterop {
 		request.DID = strings.TrimPrefix(myDIDDoc.ID, "did:sov:")
 	} else {
@@ -434,7 +434,7 @@ func (ctx *context) handleInboundRequest(request *Request, options *options,
 	connRec *connectionstore.Record) (stateAction, *connectionstore.Record, error) {
 	logger.Debugf("handling request: %#v", request)
 
-	// Interop: aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// Interop: aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	if ctx.doACAPyInterop && !strings.HasPrefix(request.DID, "did") {
 		request.DID = "did:peer:" + request.DID
 	}
@@ -487,7 +487,7 @@ func (ctx *context) handleInboundRequest(request *Request, options *options,
 	connRec.MyDID = responseDidDoc.ID
 
 	if ctx.doACAPyInterop {
-		// Interop: aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+		// Interop: aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 		responseDidDoc, err = convertPeerToSov(responseDidDoc)
 		if err != nil {
 			return nil, nil, fmt.Errorf("converting my did doc to a 'sov' doc for response message: %w", err)
@@ -542,7 +542,7 @@ func (ctx *context) prepareResponse(request *Request, responseDidDoc *did.Doc) (
 	}
 
 	// Interop: aca-py expects naked DID method-specific identifier for sov DIDs
-	// https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	response.DID = strings.TrimPrefix(responseDidDoc.ID, "did:sov:")
 	response.DocAttach = docAttach
 
@@ -779,7 +779,7 @@ func (ctx *context) addRouterKeys(doc *did.Doc, routerConnections []string) erro
 		// use KeyAgreement.ID as recKey for DIDComm V2
 		for _, ka := range doc.KeyAgreement {
 			for _, connID := range routerConnections {
-				// TODO https://github.com/hyperledger/aries-framework-go/issues/1105 Support to Add multiple
+				// TODO https://github.com/markcryptohash/aries-framework-go/issues/1105 Support to Add multiple
 				//  recKeys to the Router. (DIDComm V2 uses list of keyAgreements as router keys here, double check
 				//  if this issue can be closed).
 				kaID := ka.VerificationMethod.ID
@@ -800,7 +800,7 @@ func (ctx *context) addRouterKeys(doc *did.Doc, routerConnections []string) erro
 	if ok {
 		for _, recKey := range svc.RecipientKeys {
 			for _, connID := range routerConnections {
-				// TODO https://github.com/hyperledger/aries-framework-go/issues/1105 Support to Add multiple
+				// TODO https://github.com/markcryptohash/aries-framework-go/issues/1105 Support to Add multiple
 				//  recKeys to the Router
 				if err := mediator.AddKeyToRouter(ctx.routeSvc, connID, recKey); err != nil {
 					return fmt.Errorf("did doc - add key to the router: %w", err)
@@ -818,7 +818,7 @@ func (ctx *context) isPrivateDIDMethod(method string) bool {
 		return true
 	}
 
-	// Interop: treat sov as a peer did: aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// Interop: treat sov as a peer did: aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	return method == "peer" || (ctx.doACAPyInterop && method == "sov")
 }
 
@@ -826,7 +826,7 @@ func (ctx *context) isPrivateDIDMethod(method string) bool {
 func (ctx *context) resolveDidDocFromMessage(didValue string, attachment *decorator.Attachment) (*did.Doc, error) {
 	parsedDID, err := did.Parse(didValue)
 	// Interop: aca-py dids missing schema:method:, ignore error and skip checking if it's a public did
-	// aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	if err != nil && !ctx.doACAPyInterop {
 		return nil, fmt.Errorf("failed to parse did: %w", err)
 	}
@@ -856,7 +856,7 @@ func (ctx *context) resolveDidDocFromMessage(didValue string, attachment *decora
 		return nil, fmt.Errorf("failed to parse did document: %w", err)
 	}
 
-	// Interop: accommodate aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// Interop: accommodate aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	var method string
 
 	if parsedDID != nil && parsedDID.Method != "sov" {
@@ -865,7 +865,7 @@ func (ctx *context) resolveDidDocFromMessage(didValue string, attachment *decora
 		method = "peer"
 	}
 
-	// Interop: part of above issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// Interop: part of above issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	if ctx.doACAPyInterop {
 		didDoc.ID = didValue
 	}
@@ -890,7 +890,7 @@ func (ctx *context) handleInboundResponse(response *Response) (stateAction, *con
 		return nil, nil, fmt.Errorf("get connection record: %w", err)
 	}
 
-	// Interop: aca-py issue https://github.com/hyperledger/aries-cloudagent-python/issues/1048
+	// Interop: aca-py issue https://github.com/markcryptohash/aries-cloudagent-python/issues/1048
 	if ctx.doACAPyInterop && !strings.HasPrefix(response.DID, "did") {
 		response.DID = "did:peer:" + response.DID
 	}

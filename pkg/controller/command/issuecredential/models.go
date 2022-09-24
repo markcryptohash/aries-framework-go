@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package issuecredential
 
-import "github.com/hyperledger/aries-framework-go/pkg/client/issuecredential"
+import "github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential"
 
 // AcceptProposalArgs model
 //

@@ -14,13 +14,13 @@ import (
 
 	"github.com/google/uuid"
 
-	issuecredentialclient "github.com/hyperledger/aries-framework-go/pkg/client/issuecredential"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cm"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/presexch"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/verifiable"
-	bddverifiable "github.com/hyperledger/aries-framework-go/test/bdd/pkg/verifiable"
+	issuecredentialclient "github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cm"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/presexch"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/verifiable"
+	bddverifiable "github.com/markcryptohash/aries-framework-go/test/bdd/pkg/verifiable"
 )
 
 const expectedVCID = "https://eu.com/claims/DriversLicense"

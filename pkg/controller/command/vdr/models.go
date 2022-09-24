@@ -9,7 +9,7 @@ package vdr
 import (
 	"encoding/json"
 
-	storeDID "github.com/hyperledger/aries-framework-go/pkg/store/did"
+	storeDID "github.com/markcryptohash/aries-framework-go/pkg/store/did"
 )
 
 // Document is model for did document.

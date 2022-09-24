@@ -19,14 +19,14 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/component/storageutil/mem"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	serviceMocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/didcomm/common/service"
-	presentproofMocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/didcomm/protocol/presentproof"
-	storageMocks "github.com/hyperledger/aries-framework-go/pkg/internal/gomocks/spi/storage"
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/component/storageutil/mem"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	serviceMocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/didcomm/common/service"
+	presentproofMocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/didcomm/protocol/presentproof"
+	storageMocks "github.com/markcryptohash/aries-framework-go/pkg/internal/gomocks/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (

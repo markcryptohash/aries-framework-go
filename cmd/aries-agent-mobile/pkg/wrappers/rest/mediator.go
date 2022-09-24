@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package rest
 
 import (
-	"github.com/hyperledger/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/command/mediator"
+	"github.com/markcryptohash/aries-framework-go/cmd/aries-agent-mobile/pkg/wrappers/models"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/command/mediator"
 )
 
 // Mediator contains necessary fields to support its operations.

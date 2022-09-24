@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 package presentproof
 
-import protocol "github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/presentproof"
+import protocol "github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/presentproof"
 
 // presentProofActionsRequest model
 //

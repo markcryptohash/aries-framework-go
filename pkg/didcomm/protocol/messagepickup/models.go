@@ -9,11 +9,11 @@ package messagepickup
 import (
 	"time"
 
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
 )
 
 // StatusRequest sent by the recipient to the message_holder to request a status message./0212-pickup#statusrequest
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0212-pickup#statusrequest
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0212-pickup#statusrequest
 type StatusRequest struct {
 	Type   string            `json:"@type,omitempty"`
 	ID     string            `json:"@id,omitempty"`
@@ -21,7 +21,7 @@ type StatusRequest struct {
 }
 
 // Status details about pending messages
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0212-pickup#status
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0212-pickup#status
 type Status struct {
 	Type              string            `json:"@type,omitempty"`
 	ID                string            `json:"@id,omitempty"`
@@ -35,7 +35,7 @@ type Status struct {
 }
 
 // BatchPickup a request to have multiple waiting messages sent inside a batch message.
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0212-pickup#batch-pickup
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0212-pickup#batch-pickup
 type BatchPickup struct {
 	Type      string            `json:"@type,omitempty"`
 	ID        string            `json:"@id,omitempty"`
@@ -44,7 +44,7 @@ type BatchPickup struct {
 }
 
 // Batch a message that contains multiple waiting messages.
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0212-pickup#batch
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0212-pickup#batch
 type Batch struct {
 	Type     string            `json:"@type,omitempty"`
 	ID       string            `json:"@id,omitempty"`
@@ -60,7 +60,7 @@ type Message struct {
 }
 
 // Noop message
-// https://github.com/hyperledger/aries-rfcs/tree/master/features/0212-pickup#noop
+// https://github.com/markcryptohash/aries-rfcs/tree/master/features/0212-pickup#noop
 type Noop struct {
 	Type string `json:"@type,omitempty"`
 	ID   string `json:"@id,omitempty"`

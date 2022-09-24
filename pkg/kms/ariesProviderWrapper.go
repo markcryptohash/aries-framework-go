@@ -10,7 +10,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 // AriesWrapperStoreName is the store name used when creating a KMS store using kms.NewAriesProviderWrapper.

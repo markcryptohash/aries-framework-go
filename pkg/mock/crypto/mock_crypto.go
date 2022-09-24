@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package crypto
 
 import (
-	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
+	cryptoapi "github.com/markcryptohash/aries-framework-go/pkg/crypto"
 )
 
 // SignFunc mocks Crypto's Sign() function, it's useful for executing custom signing with the help of SignKey.

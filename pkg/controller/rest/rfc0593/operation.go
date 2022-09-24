@@ -9,10 +9,10 @@ package rfc0593
 import (
 	"net/http"
 
-	"github.com/hyperledger/aries-framework-go/pkg/client/issuecredential/rfc0593"
-	cmd "github.com/hyperledger/aries-framework-go/pkg/controller/command/rfc0593"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
+	"github.com/markcryptohash/aries-framework-go/pkg/client/issuecredential/rfc0593"
+	cmd "github.com/markcryptohash/aries-framework-go/pkg/controller/command/rfc0593"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
 )
 
 const (

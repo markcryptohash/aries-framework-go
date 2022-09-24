@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package ld
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/doc/ldcontext"
-	"github.com/hyperledger/aries-framework-go/pkg/store/ld"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/ldcontext"
+	"github.com/markcryptohash/aries-framework-go/pkg/store/ld"
 )
 
 // ProviderID is a request/response model for operations that involve remote provider ID.

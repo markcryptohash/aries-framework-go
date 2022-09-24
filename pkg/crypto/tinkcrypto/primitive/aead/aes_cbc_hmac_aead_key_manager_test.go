@@ -19,17 +19,17 @@ import (
 	"github.com/google/tink/go/subtle/random"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
-	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
-	aescbcpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto"
-	aeadpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_hmac_aead_go_proto"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
+	aescbcpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto"
+	aeadpb "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_hmac_aead_go_proto"
 )
 
 const (
 	// AESCBCHMACAEADKeyVersion is the maximal version of AES-CBC-HMAC-AEAD keys that Tink supports.
 	AESCBCHMACAEADKeyVersion = 0
 	// AESCBCHMACAEADTypeURL is the type URL of AES-CBC-HMAC-AEAD keys that Tink supports.
-	AESCBCHMACAEADTypeURL = "type.hyperledger.org/hyperledger.aries.crypto.tink.AesCbcHmacAeadKey"
+	AESCBCHMACAEADTypeURL = "type.markcryptohash.org/markcryptohash.aries.crypto.tink.AesCbcHmacAeadKey"
 )
 
 func TestNewKeyMultipleTimes(t *testing.T) {

@@ -13,9 +13,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/crypto"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cl"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/crypto"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cl"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 // Issuer is an ursa implementation of the CL Issuer API.

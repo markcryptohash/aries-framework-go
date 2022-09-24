@@ -10,8 +10,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/signature/suite/bbsblssignatureproof2020"
-	jsonutil "github.com/hyperledger/aries-framework-go/pkg/doc/util/json"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/signature/suite/bbsblssignatureproof2020"
+	jsonutil "github.com/markcryptohash/aries-framework-go/pkg/doc/util/json"
 )
 
 // GenerateBBSSelectiveDisclosure generate BBS+ selective disclosure from one BBS+ signature.

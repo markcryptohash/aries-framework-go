@@ -13,9 +13,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/hyperledger/ursa-wrapper-go/pkg/libursa/ursa"
+	"github.com/markcryptohash/ursa-wrapper-go/pkg/libursa/ursa"
 
-	"github.com/hyperledger/aries-framework-go/pkg/internal/ursautil"
+	"github.com/markcryptohash/aries-framework-go/pkg/internal/ursautil"
 )
 
 // CLBlinder is used for blinding CL MasterSecret with arbitrary values.

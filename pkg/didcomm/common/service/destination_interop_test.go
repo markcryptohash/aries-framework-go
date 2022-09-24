@@ -14,8 +14,8 @@ import (
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/stretchr/testify/require"
 
-	mockdiddoc "github.com/hyperledger/aries-framework-go/pkg/mock/diddoc"
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
+	mockdiddoc "github.com/markcryptohash/aries-framework-go/pkg/mock/diddoc"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
 )
 
 func TestCreateDestinationFromLegacyDoc(t *testing.T) {

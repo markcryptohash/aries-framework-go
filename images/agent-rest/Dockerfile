@@ -15,12 +15,12 @@ RUN apk add --no-cache \
 	libtool \
 	bash \
 	make;
-ADD . $GOPATH/src/github.com/hyperledger/aries-framework-go
-WORKDIR $GOPATH/src/github.com/hyperledger/aries-framework-go
+ADD . $GOPATH/src/github.com/markcryptohash/aries-framework-go
+WORKDIR $GOPATH/src/github.com/markcryptohash/aries-framework-go
 ENV EXECUTABLES go git
 
 FROM golang as aries-framework
-LABEL org.opencontainers.image.source https://github.com/hyperledger/aries-framework-go
+LABEL org.opencontainers.image.source https://github.com/markcryptohash/aries-framework-go
 
 ARG GO_TAGS
 ARG GOPROXY
@@ -29,5 +29,5 @@ RUN GO_TAGS=${GO_TAGS} GOPROXY=${GOPROXY} make agent-rest
 
 FROM alpine:${ALPINE_VER} as base
 RUN apk add -U --no-cache ca-certificates
-COPY --from=aries-framework /go/src/github.com/hyperledger/aries-framework-go/build/bin/aries-agent-rest /usr/local/bin
+COPY --from=aries-framework /go/src/github.com/markcryptohash/aries-framework-go/build/bin/aries-agent-rest /usr/local/bin
 ENTRYPOINT ["aries-agent-rest"]

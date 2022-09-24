@@ -12,17 +12,17 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/hyperledger/aries-framework-go/pkg/common/model"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/common/service"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/didexchange"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/mediator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofband"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/transport"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
-	"github.com/hyperledger/aries-framework-go/pkg/doc/util/kmsdidkey"
-	"github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
-	"github.com/hyperledger/aries-framework-go/pkg/kms"
+	"github.com/markcryptohash/aries-framework-go/pkg/common/model"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/common/service"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/didexchange"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/mediator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofband"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/transport"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/did"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/util/kmsdidkey"
+	"github.com/markcryptohash/aries-framework-go/pkg/framework/aries/api/vdr"
+	"github.com/markcryptohash/aries-framework-go/pkg/kms"
 )
 
 type (
@@ -126,7 +126,7 @@ type Provider interface {
 }
 
 // Client for the Out-Of-Band protocol:
-// https://github.com/hyperledger/aries-rfcs/blob/master/features/0434-outofband/README.md
+// https://github.com/markcryptohash/aries-rfcs/blob/master/features/0434-outofband/README.md
 type Client struct {
 	service.Event
 	didDocSvcFunc     func(routerConnID string, accept []string) (*did.Service, error)
@@ -206,7 +206,7 @@ func (c *Client) CreateInvitation(services []interface{}, opts ...MessageOption)
 
 	if len(inv.Protocols) == 0 {
 		// TODO should be injected into client
-		//  https://github.com/hyperledger/aries-framework-go/issues/1691
+		//  https://github.com/markcryptohash/aries-framework-go/issues/1691
 		inv.Protocols = []string{didexchange.PIURI}
 	}
 
@@ -380,7 +380,7 @@ func (c *Client) didServiceBlockFunc(p Provider) func(routerConnID string, accep
 		)
 
 		useDIDCommV2 := isDIDCommV2(accept)
-		// TODO https://github.com/hyperledger/aries-framework-go/issues/623 'alias' should be passed as arg and persisted
+		// TODO https://github.com/markcryptohash/aries-framework-go/issues/623 'alias' should be passed as arg and persisted
 		//  with connection record
 		if useDIDCommV2 {
 			keyType = p.KeyAgreementType()

@@ -13,11 +13,11 @@ import (
 	"testing"
 
 	"github.com/google/tink/go/keyset"
-	"github.com/hyperledger/ursa-wrapper-go/pkg/libursa/ursa"
+	"github.com/markcryptohash/ursa-wrapper-go/pkg/libursa/ursa"
 	"github.com/stretchr/testify/require"
 
-	bld "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/blinder"
-	sgn "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/signer"
+	bld "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/blinder"
+	sgn "github.com/markcryptohash/aries-framework-go/pkg/crypto/tinkcrypto/primitive/cl/signer"
 )
 
 func TestCL(t *testing.T) {

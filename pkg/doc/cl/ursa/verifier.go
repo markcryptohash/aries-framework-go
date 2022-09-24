@@ -12,7 +12,7 @@ package ursa
 import (
 	"fmt"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/cl"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/cl"
 )
 
 // Verifier is an ursa implementation of the CL Verifier API.

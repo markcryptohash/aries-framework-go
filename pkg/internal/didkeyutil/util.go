@@ -11,7 +11,7 @@ import (
 
 	"github.com/btcsuite/btcutil/base58"
 
-	"github.com/hyperledger/aries-framework-go/pkg/vdr/fingerprint"
+	"github.com/markcryptohash/aries-framework-go/pkg/vdr/fingerprint"
 )
 
 // ConvertBase58KeysToDIDKeys converts base58 keys array to did:key keys array.

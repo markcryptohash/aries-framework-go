@@ -2,14 +2,14 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-module github.com/hyperledger/aries-framework-go/component/storageutil
+module github.com/markcryptohash/aries-framework-go/component/storageutil
 
 go 1.17
 
 require (
 	github.com/google/uuid v1.1.2
-	github.com/hyperledger/aries-framework-go/spi v0.0.0-20220322085443-50e8f9bd208b
-	github.com/hyperledger/aries-framework-go/test/component v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220322085443-50e8f9bd208b
 	github.com/stretchr/testify v1.7.0
 )
 

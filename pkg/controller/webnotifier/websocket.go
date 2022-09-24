@@ -14,8 +14,8 @@ import (
 
 	"nhooyr.io/websocket"
 
-	"github.com/hyperledger/aries-framework-go/pkg/controller/internal/cmdutil"
-	"github.com/hyperledger/aries-framework-go/pkg/controller/rest"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/internal/cmdutil"
+	"github.com/markcryptohash/aries-framework-go/pkg/controller/rest"
 )
 
 // WSNotifier is a dispatcher capable of notifying multiple subscribers via WebSocket.
@@ -60,7 +60,7 @@ func (n *WSNotifier) Notify(topic string, message []byte) error {
 	var allErrs error
 
 	for _, conn := range conns {
-		// TODO parent ctx should be an argument to Notify https://github.com/hyperledger/aries-framework-go/issues/1355
+		// TODO parent ctx should be an argument to Notify https://github.com/markcryptohash/aries-framework-go/issues/1355
 		err := notifyWS(context.Background(), conn, topicMsg)
 		allErrs = appendError(allErrs, err)
 	}
@@ -78,7 +78,7 @@ func notifyWS(parent context.Context, conn *websocket.Conn, message []byte) erro
 func (n *WSNotifier) handleWS(w http.ResponseWriter, r *http.Request) {
 	logger.Debugf("websocket notification client connected")
 
-	// TODO Allow user to enable InsecureSkipVerify https://github.com/hyperledger/aries-framework-go/issues/928
+	// TODO Allow user to enable InsecureSkipVerify https://github.com/markcryptohash/aries-framework-go/issues/928
 	conn, err := websocket.Accept(w, r, &websocket.AcceptOptions{InsecureSkipVerify: true})
 	if err != nil {
 		logger.Infof("failed to upgrade the websocket notification connection : %v", err)

@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package outofbandv2
 
 import (
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/decorator"
-	"github.com/hyperledger/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/decorator"
+	"github.com/markcryptohash/aries-framework-go/pkg/didcomm/protocol/outofbandv2"
 )
 
 // CreateInvitationArgs model

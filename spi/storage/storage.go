@@ -11,7 +11,7 @@ import (
 	"fmt"
 	standardlog "log"
 
-	spi "github.com/hyperledger/aries-framework-go/spi/log"
+	spi "github.com/markcryptohash/aries-framework-go/spi/log"
 )
 
 // MultiError represents the errors that occurred during a bulk operation.

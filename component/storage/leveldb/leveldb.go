@@ -15,7 +15,7 @@ import (
 
 	"github.com/syndtr/goleveldb/leveldb"
 
-	"github.com/hyperledger/aries-framework-go/spi/storage"
+	"github.com/markcryptohash/aries-framework-go/spi/storage"
 )
 
 const (

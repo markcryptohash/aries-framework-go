@@ -16,8 +16,8 @@ import (
 	"github.com/google/tink/go/subtle/random"
 	"golang.org/x/crypto/hkdf"
 
-	"github.com/hyperledger/aries-framework-go/pkg/secretlock"
-	cipherutil "github.com/hyperledger/aries-framework-go/pkg/secretlock/local/internal/cipher"
+	"github.com/markcryptohash/aries-framework-go/pkg/secretlock"
+	cipherutil "github.com/markcryptohash/aries-framework-go/pkg/secretlock/local/internal/cipher"
 )
 
 // package hkdf provides an hkdf implementation of secretlock as a masterlock.

@@ -17,7 +17,7 @@ import (
 	"github.com/PaesslerAG/gval"
 	"github.com/PaesslerAG/jsonpath"
 
-	"github.com/hyperledger/aries-framework-go/pkg/doc/presexch"
+	"github.com/markcryptohash/aries-framework-go/pkg/doc/presexch"
 )
 
 // CredentialManifestAttachmentFormat defines the format type of Credential Manifest when used as an attachment in the

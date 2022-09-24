@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package jwt
 
 import (
-	ariescrypto "github.com/hyperledger/aries-framework-go/pkg/crypto"
+	ariescrypto "github.com/markcryptohash/aries-framework-go/pkg/crypto"
 )
 
 type cryptoSigner struct {
