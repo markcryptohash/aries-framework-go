@@ -8,7 +8,7 @@ go 1.19
 
 require (
 	github.com/google/uuid v1.1.2
-	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go main
 	github.com/markcryptohash/aries-framework-go/spi main
 	github.com/markcryptohash/aries-framework-go/test/component main
 	github.com/stretchr/testify v1.7.0

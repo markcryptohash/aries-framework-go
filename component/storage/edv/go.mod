@@ -11,10 +11,10 @@ require (
 	github.com/cenkalti/backoff/v4 v4.0.2
 	github.com/google/tink/go v1.6.1-0.20210519071714-58be99b3c4d0
 	github.com/google/uuid v1.1.2
-	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go main
 	github.com/markcryptohash/aries-framework-go/component/storageutil main
 	github.com/markcryptohash/aries-framework-go/spi main
-	github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220428211718-66cc046674a1
+	github.com/markcryptohash/aries-framework-go/test/component main
 	github.com/stretchr/testify v1.7.0
 )
 

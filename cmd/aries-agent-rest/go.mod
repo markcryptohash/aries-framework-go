@@ -9,10 +9,10 @@ go 1.19
 require (
 	github.com/cenkalti/backoff/v4 v4.1.2
 	github.com/gorilla/mux v1.7.3
-	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go main
 	github.com/markcryptohash/aries-framework-go/component/storage/leveldb main
 	github.com/markcryptohash/aries-framework-go/component/storageutil main
-	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
+	github.com/markcryptohash/aries-framework-go/spi main
 	github.com/rs/cors v1.7.0
 	github.com/spf13/cobra v1.0.0
 	github.com/stretchr/testify v1.7.2
@@ -35,7 +35,7 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/tink/go v1.6.1 // indirect
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/markcryptohash/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c // indirect
+	github.com/markcryptohash/aries-framework-go/component/storage/edv main // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.8.1 // indirect
