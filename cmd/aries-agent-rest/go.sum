@@ -350,7 +350,7 @@ github.com/markcryptohash/aries-framework-go-ext/component/storage/postgresql v0
 github.com/markcryptohash/aries-framework-go-ext/component/storage/postgresql v0.0.0-20220629202442-ce8776c10037/go.mod h1:35iXtsPH1PImVDq8xFHETtrcvyHhJXKcvf82YJ6/z4k=
 github.com/markcryptohash/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c h1:8yL/HlgZmfsyXdLJjdE0gBAUjAuW9ZU4I+OiVkil22w=
 github.com/markcryptohash/aries-framework-go/component/storage/edv v0.0.0-20220606124520-53422361c38c/go.mod h1:JrwivOOQmuXbV1mFWgBGWnfCorOFdfGkpBsYK8dYrfM=
-github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220322085443-50e8f9bd208b/go.mod h1:HojN6OAh8ZtXBe5X2arcSOe1SLo5Dsjqto8ICjSLQ2g=
+github.com/markcryptohash/aries-framework-go/test/component main/go.mod h1:HojN6OAh8ZtXBe5X2arcSOe1SLo5Dsjqto8ICjSLQ2g=
 github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220330140627-07042d78580c/go.mod h1:lykx3N+GX+sAWSxO2Ycc4Dz+ynV9b0Fv4NdP+ms4Alc=
 github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220428211718-66cc046674a1/go.mod h1:lykx3N+GX+sAWSxO2Ycc4Dz+ynV9b0Fv4NdP+ms4Alc=
 github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220509181817-261c3746d03e h1:Jw8qXxl32lfdkxqUOjwLEhsQC2+lT/YtcM7MuOd9+7k=

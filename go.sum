@@ -203,8 +203,8 @@ github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-202108
 github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20210820175050-dcc7a225178d/go.mod h1:wdgGPwXzih+QD2Q4nvMnGO0dm0D0rxmzQcSNLcW6fcg=
 github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220217153004-1622c70e5767/go.mod h1:yLgRpVlZ2heeeOpTgvEnG/yHL9q1keUu5ILQ6s2qpLU=
 github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220308060532-714cd5c18552/go.mod h1:yLgRpVlZ2heeeOpTgvEnG/yHL9q1keUu5ILQ6s2qpLU=
-github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b h1:IoD7+sHQRLMouwHjhrOj5vhg+rPt/aKl4P+WiBZVHVk=
-github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b/go.mod h1:yLgRpVlZ2heeeOpTgvEnG/yHL9q1keUu5ILQ6s2qpLU=
+github.com/markcryptohash/aries-framework-go/component/storageutil main h1:IoD7+sHQRLMouwHjhrOj5vhg+rPt/aKl4P+WiBZVHVk=
+github.com/markcryptohash/aries-framework-go/component/storageutil main/go.mod h1:yLgRpVlZ2heeeOpTgvEnG/yHL9q1keUu5ILQ6s2qpLU=
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20210320144851-40976de98ccf/go.mod h1:fDr9wW00GJJl1lR1SFHmJW8utIocdvjO5RNhAYS05EY=
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20210322152545-e6ebe2c79a2a/go.mod h1:fDr9wW00GJJl1lR1SFHmJW8utIocdvjO5RNhAYS05EY=
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20210409151411-eeeb8508bd87/go.mod h1:dBYKKD8U8U9o0g5BdNFFaRtjt9KTkiAYfQt+TTp+w1o=
@@ -222,7 +222,7 @@ github.com/markcryptohash/aries-framework-go/spi v0.0.0-20210820175050-dcc7a2251
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20211203210130-e927c9ed581a/go.mod h1:dBYKKD8U8U9o0g5BdNFFaRtjt9KTkiAYfQt+TTp+w1o=
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220217153004-1622c70e5767/go.mod h1:4bD5c5fj5K7rkQurVa/8I8+TfNcI4bxIBzaUNcxTOTg=
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220308060532-714cd5c18552/go.mod h1:4bD5c5fj5K7rkQurVa/8I8+TfNcI4bxIBzaUNcxTOTg=
-github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220322085443-50e8f9bd208b/go.mod h1:4bD5c5fj5K7rkQurVa/8I8+TfNcI4bxIBzaUNcxTOTg=
+github.com/markcryptohash/aries-framework-go/spi main/go.mod h1:4bD5c5fj5K7rkQurVa/8I8+TfNcI4bxIBzaUNcxTOTg=
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c h1:4JSde5+80U+W8IxwNt/Dd/3PPEIGYTI3RbjFXOi4o1g=
 github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c/go.mod h1:4bD5c5fj5K7rkQurVa/8I8+TfNcI4bxIBzaUNcxTOTg=
 github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20210324232048-34ff560ed041/go.mod h1:eKGEEe+PJNDQo7kVif3sUKBWwnsQDkE3gD/QlpmukcQ=

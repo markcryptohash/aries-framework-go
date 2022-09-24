@@ -10,8 +10,8 @@ require (
 	github.com/cenkalti/backoff/v4 v4.1.2
 	github.com/gorilla/mux v1.7.3
 	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
-	github.com/markcryptohash/aries-framework-go/component/storage/leveldb v0.0.0-20220322085443-50e8f9bd208b
-	github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storage/leveldb main
+	github.com/markcryptohash/aries-framework-go/component/storageutil main
 	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
 	github.com/rs/cors v1.7.0
 	github.com/spf13/cobra v1.0.0

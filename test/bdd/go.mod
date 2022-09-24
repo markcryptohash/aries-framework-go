@@ -14,8 +14,8 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/mux v1.8.0
 	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
-	github.com/markcryptohash/aries-framework-go/component/storage/leveldb v0.0.0-20220322085443-50e8f9bd208b
-	github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storage/leveldb main
+	github.com/markcryptohash/aries-framework-go/component/storageutil main
 	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
 	github.com/moby/sys/mount v0.2.0 // indirect
 	github.com/moby/term v0.0.0-20201110203204-bea5bbe245bf // indirect

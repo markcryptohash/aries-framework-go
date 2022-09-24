@@ -9,7 +9,7 @@ go 1.19
 require (
 	github.com/google/uuid v1.3.0
 	github.com/markcryptohash/aries-framework-go v0.1.8-0.20220322085443-50e8f9bd208b
-	github.com/markcryptohash/aries-framework-go/component/storageutil v0.0.0-20220322085443-50e8f9bd208b
+	github.com/markcryptohash/aries-framework-go/component/storageutil main
 	github.com/markcryptohash/aries-framework-go/spi v0.0.0-20220606124520-53422361c38c
 	github.com/markcryptohash/aries-framework-go/test/component v0.0.0-20220428211718-66cc046674a1
 	github.com/piprate/json-gold v0.4.1
